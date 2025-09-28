@@ -93,6 +93,7 @@ services:
     build: .
     container_name: jupyter
     hostname: jupyter
+    user: root
     ports:
       - "8888:8888"   # Jupyter Notebook
       - "4040:4040"   # Spark UI
