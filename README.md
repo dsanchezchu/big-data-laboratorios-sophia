@@ -154,10 +154,14 @@ docker exec namenode hdfs dfs -ls /
 
 ### 📈 Verificar Estado del Cluster
 ```bash
-# Estado de HDFS
+# Estado de HDFS (debería mostrar 2 DataNodes)
 docker exec namenode hdfs dfsadmin -report
 
-# Estado de Spark
+# Verificación completa del cluster
+chmod +x verify-cluster.sh
+./verify-cluster.sh
+
+# Ver archivos en HDFS
 docker exec namenode hdfs dfs -ls /
 ```
 

@@ -41,7 +41,7 @@ case $SERVICE_TYPE in
     chown -R hadoop:hadoop /data/hdfs/namenode
     
     # Cambiar a usuario hadoop y ejecutar
-    exec gosu hadoop bash -c "
+    sudo -u hadoop bash -c "
         export JAVA_HOME=$JAVA_HOME
         export HADOOP_HOME=$HADOOP_HOME
         export PATH=$PATH
@@ -67,7 +67,7 @@ case $SERVICE_TYPE in
     mkdir -p /data/hdfs/datanode
     chown -R hadoop:hadoop /data/hdfs/datanode
     
-    exec gosu hadoop bash -c "
+    exec sudo -u hadoop bash -c "
         export JAVA_HOME=$JAVA_HOME
         export HADOOP_HOME=$HADOOP_HOME
         export PATH=$PATH
@@ -83,7 +83,7 @@ case $SERVICE_TYPE in
     # Esperar HDFS
     wait_for_port namenode 9870 120
     
-    exec gosu hadoop bash -c "
+    exec sudo -u hadoop bash -c "
         export JAVA_HOME=$JAVA_HOME
         export SPARK_HOME=$SPARK_HOME
         export PATH=$PATH
@@ -102,7 +102,7 @@ case $SERVICE_TYPE in
     # Esperar Spark Master
     wait_for_port spark-master 7077 120
     
-    exec gosu hadoop bash -c "
+    exec sudo -u hadoop bash -c "
         export JAVA_HOME=$JAVA_HOME
         export SPARK_HOME=$SPARK_HOME
         export PATH=$PATH
@@ -126,7 +126,7 @@ case $SERVICE_TYPE in
     mkdir -p /home/jupyter/notebooks
     chown -R hadoop:hadoop /home/hadoop/.jupyter /home/jupyter
     
-    exec gosu hadoop bash -c "
+    exec sudo -u hadoop bash -c "
         export PATH=/opt/python-env/bin:\$PATH
         export JAVA_HOME=$JAVA_HOME
         export SPARK_HOME=$SPARK_HOME
