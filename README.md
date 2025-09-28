@@ -48,6 +48,17 @@ docker ps
 
 ## 🚀 Guía de Instalación Paso a Paso
 
+### 🌐 **Opción 1: GitHub Codespaces** (Recomendado - Sin instalación)
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dsanchezchu/big-data-laboratorios-sophia)
+
+1. **Click en el botón de arriba**
+2. **Esperar 2-3 minutos** a que se configure
+3. **Ejecutar**: `./setup.sh`
+4. **¡Listo!** - Ver [Guía de Codespaces](CODESPACES.md)
+
+### 💻 **Opción 2: Instalación Local**
+
 ### 1️⃣ **Clonar el Repositorio**
 ```bash
 git clone https://github.com/dsanchezchu/big-data-laboratorios-sophia.git

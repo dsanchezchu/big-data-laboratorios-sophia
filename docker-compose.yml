@@ -15,7 +15,7 @@ services:
       - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
       - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml
       - ./scripts:/scripts
-    command: bash -c "/scripts/start-services.sh namenode"
+    command: bash -c "/scripts/start-services-fixed.sh namenode"
     networks:
       - hadoop-network
 
@@ -30,7 +30,7 @@ services:
       - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
       - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml
       - ./scripts:/scripts
-    command: bash -c "/scripts/start-services.sh datanode"
+    command: bash -c "/scripts/start-services-fixed.sh datanode"
     depends_on:
       - namenode
     networks:
@@ -48,7 +48,7 @@ services:
     volumes:
       - ./config/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
       - ./scripts:/scripts
-    command: bash -c "/scripts/start-services.sh spark-master"
+    command: bash -c "/scripts/start-services-fixed.sh spark-master"
     depends_on:
       - namenode
     networks:
@@ -66,7 +66,7 @@ services:
     volumes:
       - ./config/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
       - ./scripts:/scripts
-    command: bash -c "/scripts/start-services.sh spark-worker"
+    command: bash -c "/scripts/start-services-fixed.sh spark-worker"
     depends_on:
       - spark-master
     networks:
@@ -86,7 +86,7 @@ services:
       - ./config/jupyter_notebook_config.py:/home/jupyter/.jupyter/jupyter_notebook_config.py
       - ./scripts:/scripts
     working_dir: /home/jupyter/notebooks
-    command: bash -c "/scripts/start-services.sh jupyter"
+    command: bash -c "/scripts/start-services-fixed.sh jupyter"
     depends_on:
       - namenode
       - spark-master

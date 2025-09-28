@@ -66,6 +66,15 @@ docker exec namenode hdfs dfsadmin -report
 
 ## 🆘 Problemas Comunes
 
+❌ **"cannot execute: required file not found"** 
+```bash
+# Windows PowerShell
+.\fix-scripts.ps1
+
+# Linux/Mac  
+chmod +x fix-scripts.sh && ./fix-scripts.sh
+```
+
 ❌ **"Port already in use"** → `docker-compose down && docker-compose up -d`
 
 ❌ **"No se conecta"** → Esperar 2-3 minutos después del `docker-compose up -d`

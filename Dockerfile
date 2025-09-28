@@ -3,7 +3,7 @@ FROM debian:12-slim
 # Evitar preguntas interactivas durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Instalar dependencias del sistema
+# Instalar dependencias adicionales
 RUN apt-get update && apt-get install -y \
     openjdk-17-jdk \
     wget \
@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y \
     vim \
     net-tools \
     iputils-ping \
+    gosu \
+    netcat-traditional \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 # Configurar variables de entorno
@@ -73,9 +76,11 @@ RUN mkdir -p /data/hdfs/namenode && \
     mkdir -p /scripts && \
     chown -R hadoop:hadoop /data /home/jupyter /scripts
 
-# Copiar scripts
+# Copiar scripts y asegurar permisos correctos
 COPY scripts/ /scripts/
-RUN chmod +x /scripts/*.sh
+RUN dos2unix /scripts/*.sh && \
+    chmod +x /scripts/*.sh && \
+    chown -R hadoop:hadoop /scripts
 
 # Cambiar al usuario hadoop
 USER hadoop

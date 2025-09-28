@@ -1,0 +1,64 @@
+{
+  "name": "Big Data Cluster - Hadoop & Spark",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "enableNonRootDocker": "true"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y docker-compose curl wget && pip install jupyter",
+  
+  "forwardPorts": [8888, 9870, 8080, 8081, 4040],
+  
+  "portsAttributes": {
+    "8888": {
+      "label": "Jupyter Lab",
+      "onAutoForward": "openBrowser"
+    },
+    "9870": {
+      "label": "Hadoop HDFS UI",
+      "onAutoForward": "ignore"
+    },
+    "8080": {
+      "label": "Spark Master UI", 
+      "onAutoForward": "ignore"
+    },
+    "8081": {
+      "label": "Spark Worker UI",
+      "onAutoForward": "ignore"
+    },
+    "4040": {
+      "label": "Spark Application UI",
+      "onAutoForward": "ignore"
+    }
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  
+  "remoteUser": "vscode",
+  
+  "onCreateCommand": "echo '🚀 Big Data Cluster configurándose...'",
+  "postStartCommand": "echo '✅ Listo para usar! Ejecuta: ./setup.sh'"
+}
