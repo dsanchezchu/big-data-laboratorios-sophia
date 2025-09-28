@@ -36,6 +36,23 @@ services:
     networks:
       - hadoop-network
 
+  datanode2:
+    build: .
+    container_name: datanode2
+    hostname: datanode2
+    environment:
+      - CLUSTER_NAME=hadoop-cluster
+    volumes:
+      - datanode2_data:/data/hdfs/datanode
+      - ./config/core-site.xml:/opt/hadoop/etc/hadoop/core-site.xml
+      - ./config/hdfs-site.xml:/opt/hadoop/etc/hadoop/hdfs-site.xml
+      - ./scripts:/scripts
+    command: bash -c "/scripts/start-services-fixed.sh datanode"
+    depends_on:
+      - namenode
+    networks:
+      - hadoop-network
+
   spark-master:
     build: .
     container_name: spark-master
@@ -96,6 +113,7 @@ services:
 volumes:
   namenode_data:
   datanode1_data:
+  datanode2_data:
 
 networks:
   hadoop-network:
