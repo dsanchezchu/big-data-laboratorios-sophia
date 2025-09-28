@@ -1,0 +1,50 @@
+# Archivos de Docker
+.env.local
+*.log
+
+# Volúmenes y datos de Docker
+volumes/
+data/temp/
+data/output/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# Notebooks temporales
+notebooks/.ipynb_checkpoints/
+notebooks/Untitled*.ipynb
+
+# Archivos específicos de usuario
+jupyter_notebooks/work/
+.jupyter/
+
+# Logs y archivos de depuración
+*.log
+debug.log
+error.log
+
+# Archivos de configuración local (si existen)
+config/local/
+secrets/
