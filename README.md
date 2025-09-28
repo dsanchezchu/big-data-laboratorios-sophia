@@ -1,6 +1,6 @@
-# 🚀 Big Data Laboratorios Sophia - Cluster Hadoop & Spark
+# 🚀 Big Data Laboratorios Sophia - Cluster Hadoop & Spark con Apache NiFi
 
-Este proyecto implementa un cluster completo de Big Data usando **Hadoop HDFS** y **Apache Spark** ejecutándose en contenedores **Debian 12** para el curso de Big Data de Sophia.
+Este proyecto implementa un cluster completo de Big Data usando **Apache NiFi**, **Hadoop HDFS** y **Apache Spark** ejecutándose en contenedores para el curso de Big Data de Sophia.
 
 ## 👥 Equipo de Desarrollo
 - **Desarrollador Principal**: Diego Sanchez
@@ -10,18 +10,22 @@ Este proyecto implementa un cluster completo de Big Data usando **Hadoop HDFS** 
 ## 🏗️ Arquitectura del Cluster
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    🌐 Interfaces Web                        │
-│  Hadoop UI (9870) │ Spark UI (8080) │ Jupyter Lab (8888)   │
-└─────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────┐
-│                    ⚡ Capa de Procesamiento                  │
-│          Spark Master ──────── Spark Worker                │
-└─────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────┐
-│                    💾 Capa de Almacenamiento                │
-│          NameNode ──────────── DataNode                    │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           🌐 Interfaces Web                                 │
+│  NiFi UI (8082) │ Hadoop UI (9870) │ Spark UI (8080) │ Jupyter Lab (8888) │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          ⚡ Capa de Procesamiento                           │
+│              Spark Master ──────────── Spark Worker                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          💾 Capa de Almacenamiento                          │
+│               NameNode ──────────────── DataNode                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          🌊 Capa de Ingesta de Datos                        │
+│                              Apache NiFi                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## � Requisitos Previos
@@ -93,12 +97,20 @@ chmod +x test-cluster.sh
 
 | 🌐 Servicio | 📍 URL | 📝 Descripción |
 |-------------|--------|----------------|
-| **Hadoop HDFS UI** | http://localhost:9870 | Administración del sistema de archivos distribuido |
-| **Spark Master UI** | http://localhost:8080 | Monitor del cluster Spark |
-| **Spark Worker UI** | http://localhost:8081 | Estado del worker Spark |
-| **Jupyter Lab** | http://localhost:8888 | Notebooks interactivos |
+| **🌊 Apache NiFi UI** | http://localhost:8082 | Ingesta y procesamiento de flujos de datos |
+| **💾 Hadoop HDFS UI** | http://localhost:9870 | Administración del sistema de archivos distribuido |
+| **⚡ Spark Master UI** | http://localhost:8080 | Monitor del cluster Spark |
+| **🔧 Spark Worker UI** | http://localhost:8081 | Estado del worker Spark |
+| **📊 Jupyter Lab** | http://localhost:8888 | Notebooks interactivos |
 
-## � Token de Jupyter
+## 🔑 Credenciales de Acceso
+
+### 🌊 Apache NiFi
+- **Usuario**: `admin`
+- **Contraseña**: `ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB`
+- **URL**: http://localhost:8082
+
+### 📊 Token de Jupyter
 
 Para obtener el token de acceso a Jupyter:
 
@@ -115,23 +127,60 @@ docker-compose logs jupyter | grep -E "(token|http://)"
 ## 🛠️ Componentes del Sistema
 
 ### 📦 Contenedores Incluidos
-- **NameNode**: Gestiona metadatos HDFS (Puerto 9870)
-- **DataNode**: Almacena datos distribuidos  
-- **Spark Master**: Coordinador de trabajos Spark (Puerto 8080)
-- **Spark Worker**: Ejecutor de tareas Spark (Puerto 8081)
-- **Jupyter Lab**: Entorno de desarrollo interactivo (Token requerido)
+- **🌊 Apache NiFi**: Ingesta y procesamiento de flujos de datos (Puerto 8082)
+- **💾 NameNode**: Gestiona metadatos HDFS (Puerto 9870)
+- **💾 DataNode**: Almacena datos distribuidos  
+- **⚡ Spark Master**: Coordinador de trabajos Spark (Puerto 8080)
+- **⚡ Spark Worker**: Ejecutor de tareas Spark (Puerto 8081)
+- **📊 Jupyter Lab**: Entorno de desarrollo interactivo (Token requerido)
 
 ### 🔧 Tecnologías Utilizadas
-- **Sistema Base**: Debian 12 (Bookworm)
+- **Sistema Base**: Debian 12 (Bookworm) para servicios Hadoop/Spark
+- **Ingesta de Datos**: Apache NiFi 1.23.2
 - **Java**: OpenJDK 17
-- **Hadoop**: 3.3.6
-- **Spark**: 3.4.1
-- **Python**: 3.11 con entorno virtual
-- **Jupyter Lab**: Última versión
+- **Almacenamiento Distribuido**: Hadoop HDFS 3.3.6
+- **Procesamiento Distribuido**: Apache Spark 3.4.1
+- **Análisis Interactivo**: Python 3.11 con Jupyter Lab
+- **Contenedorización**: Docker & Docker Compose
 
-## 📊 Ejemplos y Pruebas
+## 📊 Ejemplos y Flujos de Datos
 
-### 🧪 Prueba Rápida de HDFS
+### 🌊 **Flujo Completo: NiFi → HDFS → Spark → Jupyter**
+
+#### **1. Preparar Datos de Entrada**
+```bash
+# Crear archivos de ejemplo en el directorio de datos
+echo "id,name,age,city
+1,Juan,25,Madrid
+2,Maria,30,Barcelona
+3,Carlos,28,Valencia" > ./data/sample_users.csv
+```
+
+#### **2. Configurar Flujo en NiFi**
+1. **Acceder a NiFi**: http://localhost:8082
+2. **Iniciar sesión** con las credenciales proporcionadas
+3. **Crear procesadores**:
+   - `GetFile`: Leer archivos de `./data/input/`
+   - `ConvertRecord`: Convertir CSV a JSON
+   - `PutHDFS`: Escribir a HDFS en `/data/processed/`
+
+#### **3. Configuración de Procesadores NiFi**
+
+**GetFile Processor:**
+```
+Input Directory: /opt/nifi/nifi-current/data
+File Filter: .*\.csv
+Keep Source File: false
+```
+
+**PutHDFS Processor:**
+```
+Hadoop Configuration Resources: (dejar vacío)
+Directory: /data/nifi_processed
+Additional Classpath Resources: (dejar vacío)
+```
+
+### 🧪 **Prueba Rápida de HDFS**
 ```bash
 # Crear directorio en HDFS
 docker exec namenode hdfs dfs -mkdir /test
@@ -146,23 +195,43 @@ docker exec namenode hdfs dfs -cat /test/saludo.txt
 docker exec namenode hdfs dfs -ls /
 ```
 
-### ⚡ Ejemplo con Spark + Jupyter
+### ⚡ **Ejemplo con Spark + Jupyter**
 1. Abrir http://localhost:8888 e ingresar el token
-2. Abrir el notebook `notebooks/ejemplo_elt.ipynb`
-3. Ejecutar las celdas paso a paso
-4. Ver resultados en tiempo real
+2. Crear nuevo notebook de Python
+3. Ejecutar código para leer datos procesados por NiFi:
+```python
+from pyspark.sql import SparkSession
 
-### 📈 Verificar Estado del Cluster
+# Crear sesión Spark
+spark = SparkSession.builder \
+    .appName("NiFi-HDFS-Analysis") \
+    .master("spark://spark-master:7077") \
+    .getOrCreate()
+
+# Leer datos desde HDFS
+df = spark.read.json("hdfs://namenode:9000/data/nifi_processed/*.json")
+df.show()
+
+# Análisis básico
+df.groupBy("city").count().show()
+```
+
+### 📈 **Verificar Estado Completo del Cluster**
 ```bash
+# Verificar estado de todos los servicios
+docker-compose ps
+
 # Estado de HDFS (debería mostrar 2 DataNodes)
 docker exec namenode hdfs dfsadmin -report
 
-# Verificación completa del cluster
-chmod +x verify-cluster.sh
-./verify-cluster.sh
+# Ver archivos procesados por NiFi en HDFS
+docker exec namenode hdfs dfs -ls /data/
 
-# Ver archivos en HDFS
-docker exec namenode hdfs dfs -ls /
+# Verificar logs de NiFi
+docker logs nifi --tail 20
+
+# Estado de Spark Master
+curl http://localhost:8080
 ```
 
 ## 🔄 Escalabilidad del Cluster
@@ -195,19 +264,37 @@ docker-compose up -d
 
 ### 🐳 Docker
 ```bash
-# Ver logs de un servicio específico
+# Ver logs de servicios específicos
 docker-compose logs -f namenode
+docker-compose logs -f nifi
 docker-compose logs -f spark-master
 
 # Reiniciar un servicio
+docker-compose restart nifi
 docker-compose restart namenode
 
 # Acceder a un contenedor
 docker exec -it namenode bash
+docker exec -it nifi bash
 docker exec -it jupyter bash
 
 # Ver recursos utilizados
 docker stats
+```
+
+### 🌊 NiFi
+```bash
+# Ver logs de NiFi
+docker logs nifi
+
+# Reiniciar solo NiFi
+docker-compose restart nifi
+
+# Acceder al directorio de datos de NiFi
+docker exec -it nifi ls -la /opt/nifi/nifi-current/data
+
+# Ver procesadores activos (desde dentro del contenedor)
+docker exec -it nifi curl http://localhost:8080/nifi-api/flow/process-groups/root
 ```
 
 ### 🗄️ HDFS
@@ -233,6 +320,18 @@ docker exec spark-master spark-submit \
 
 ## 🆘 Resolución de Problemas
 
+### ❌ **Error: "NiFi UI no carga"**
+✅ **Solución**: 
+```bash
+# Verificar estado de NiFi
+docker logs nifi --tail 50
+
+# Reiniciar NiFi si es necesario
+docker-compose restart nifi
+
+# Esperar 2-3 minutos para inicialización completa
+```
+
 ### ❌ **Error: "pip externally-managed-environment"**
 ✅ **Solución**: El proyecto usa entorno virtual automáticamente. No requiere acción.
 
@@ -254,6 +353,18 @@ docker-compose restart jupyter
 docker-compose logs jupyter | Select-String "token"
 ```
 
+### ❌ **NiFi no puede conectar con HDFS**
+✅ **Solución**:
+```bash
+# Verificar que HDFS esté funcionando
+docker exec namenode hdfs dfsadmin -safemode get
+
+# En NiFi UI, configurar PutHDFS processor:
+# - Hadoop Configuration Resources: (dejar vacío)
+# - Directory: /data/nifi_processed
+# - No configurar Kerberos ni autenticación adicional
+```
+
 ### ❌ **DataNode no se conecta al NameNode**
 ✅ **Solución**:
 ```bash
@@ -268,18 +379,23 @@ docker-compose restart
 big-data-laboratorios-sophia/
 ├── 📄 README.md                    # Esta guía
 ├── 📄 .gitignore                   # Archivos ignorados por Git
-├── 📄 docker-compose.yml           # Orquestación de servicios
+├── 📄 docker-compose.yml           # Orquestación de servicios con NiFi
 ├── 📄 Dockerfile                   # Imagen personalizada Debian + Hadoop + Spark
-├── 📄 test-cluster.sh              # Script de pruebas automatizadas
+├── 📄 NIFI-GUIDE.md                # Guía específica de Apache NiFi
 ├── 📁 config/                      # Configuraciones
 │   ├── 📄 core-site.xml           # Configuración core de Hadoop
 │   ├── 📄 hdfs-site.xml           # Configuración HDFS
 │   ├── 📄 spark-defaults.conf     # Configuración por defecto de Spark
 │   └── 📄 jupyter_notebook_config.py # Configuración de Jupyter
 ├── 📁 scripts/                     # Scripts de automatización
-│   ├── 📄 start-services.sh       # Inicio de servicios
-│   ├── 📄 dynamic-datanodes.sh    # Gestión dinámica de DataNodes
-│   └── 📄 scale-cluster.sh        # Escalamiento del cluster
+│   ├── 📄 start-services-fixed.sh # Inicio de servicios mejorado
+│   ├── 📄 start-nifi.sh           # Script específico para NiFi
+│   └── 📄 verify-stack-nifi.ps1   # Verificación del stack completo
+├── 📁 data/                        # Datos de entrada para NiFi
+│   ├── 📁 input/                   # Archivos de entrada
+│   │   ├── 📄 sample_users.csv    # Datos de ejemplo CSV
+│   │   └── 📄 sample_logs.json    # Logs de ejemplo JSON
+│   └── 📁 processed/               # Archivos procesados
 └── 📁 notebooks/                   # Jupyter notebooks
     └── 📄 ejemplo_elt.ipynb       # Ejemplo de procesamiento ELT
 ```
@@ -288,29 +404,39 @@ big-data-laboratorios-sophia/
 
 ### 📚 **Para Estudiantes**
 - Aprender conceptos de Big Data hands-on
-- Experimentar con HDFS y operaciones distribuidas
+- Experimentar con ingesta de datos usando NiFi
+- Comprender flujos ETL/ELT completos
 - Desarrollar aplicaciones Spark en Python
-- Comprender arquitecturas de cluster
+- Practicar con sistemas distribuidos reales
 
 ### 👨‍🏫 **Para Profesores**
-- Demostrar conceptos en tiempo real
-- Asignar proyectos prácticos
-- Evaluar conocimientos con ejercicios reales
-- Mostrar diferencias entre procesamiento local vs distribuido
+- Demostrar pipelines de datos completos en tiempo real
+- Enseñar arquitecturas modernas de Big Data
+- Mostrar integración entre diferentes tecnologías
+- Asignar proyectos de análisis de datos a gran escala
+- Evaluar competencias en ecosistemas Big Data
 
 ### 🔬 **Para Proyectos**
-- Prototipado de soluciones Big Data
-- Testing de algoritmos distribuidos
-- Análisis de datasets medianos (< 10GB)
-- Desarrollo de pipelines ETL/ELT
+- Prototipado de soluciones de ingesta masiva de datos
+- Desarrollo de pipelines ETL/ELT robustos
+- Análisis de datasets medianos a grandes (GB a TB)
+- Testing de arquitecturas distribuidas
+- Implementación de data lakes modernos
 
 ## 🤝 Contribuir al Proyecto
 
 1. Fork del repositorio
 2. Crear branch para nueva funcionalidad: `git checkout -b feature/nueva-funcionalidad`
-3. Commit de cambios: `git commit -am 'Agregar nueva funcionalidad'`
+3. Commit de cambios: `git commit -am 'Add: Nueva funcionalidad de [descripción]'`
 4. Push al branch: `git push origin feature/nueva-funcionalidad`
 5. Crear Pull Request
+
+### 🏷️ **Convenciones de Commits**
+- `Add:` Nueva funcionalidad
+- `Fix:` Corrección de errores
+- `Update:` Actualización de documentación o configuración
+- `Refactor:` Refactorización de código
+- `Remove:` Eliminación de código o archivos
 
 ## 📞 Soporte y Contacto
 
@@ -327,10 +453,17 @@ Este proyecto es para uso académico en el contexto del curso de Big Data de Sop
 
 ## 🎉 ¡Felicidades!
 
-Si llegaste hasta aquí y todo funciona correctamente, ya tienes un cluster de Big Data completamente funcional. 
+Si llegaste hasta aquí y todo funciona correctamente, ya tienes un **cluster completo de Big Data con Apache NiFi** totalmente operativo. 
 
-**¡Ahora puedes explorar el fascinante mundo del procesamiento distribuido!** 🚀
+### 🌊 **Tu Stack Incluye:**
+- **Ingesta de Datos**: Apache NiFi para capturar y transformar datos
+- **Almacenamiento Distribuido**: Hadoop HDFS para big data
+- **Procesamiento Distribuido**: Apache Spark para análisis a gran escala  
+- **Análisis Interactivo**: Jupyter Lab para data science
+
+**¡Ahora puedes construir pipelines de datos modernos y explorar el fascinante mundo del Big Data!** 🚀
 
 ---
 
-*Última actualización: Septiembre 2025 - Diego Sanchez*
+*Última actualización: Septiembre 2025 - Diego Sanchez*  
+*Versión 2.0 - Con integración Apache NiFi*
