@@ -36,26 +36,40 @@ case $SERVICE_TYPE in
   "namenode")
     echo "📊 Configurando NameNode..."
     
-    # Crear directorios necesarios
     mkdir -p /data/hdfs/namenode
     chown -R hadoop:hadoop /data/hdfs/namenode
     
-    # Cambiar a usuario hadoop y ejecutar
     sudo -u hadoop bash -c "
         export JAVA_HOME=$JAVA_HOME
         export HADOOP_HOME=$HADOOP_HOME
         export PATH=$PATH
-        
-        # Formatear NameNode si es necesario
+
+        # Formatear NameNode si no está formateado
         if [ ! -d '/data/hdfs/namenode/current' ]; then
             echo '🔧 Formateando NameNode...'
             \$HADOOP_HOME/bin/hdfs namenode -format -force -nonInteractive
         fi
-        
+
+        # Iniciar NameNode en background
         echo '🚀 Iniciando NameNode...'
-        \$HADOOP_HOME/bin/hdfs namenode
+        \$HADOOP_HOME/sbin/hadoop-daemon.sh start namenode
+
+        # Esperar a que HDFS esté listo
+        echo '⏳ Esperando a que HDFS esté disponible...'
+        until \$HADOOP_HOME/bin/hdfs dfs -ls / >/dev/null 2>&1; do
+            sleep 2
+        done
+
+        # Crear la carpeta de NiFi
+        echo '📂 Creando /user/nifi en HDFS...'
+        \$HADOOP_HOME/bin/hdfs dfs -mkdir -p /user/nifi
+        \$HADOOP_HOME/bin/hdfs dfs -chown nifi:nifi /user/nifi
+
+        # Mantener contenedor vivo
+        tail -f /dev/null
     "
     ;;
+
     
   "datanode")
     echo "💾 Configurando DataNode..."

@@ -34,13 +34,25 @@ services:
       retries: 3
       start_period: 120s
 
+  nifi-init:
+    image: curlimages/curl:8.9.1
+    container_name: nifi-init
+    depends_on:
+      - nifi
+    volumes:
+      - ./scripts/init-nifi-template.sh:/init.sh
+      - ./template/conexion_nifi_a_hdfs.xml:/conexion_nifi_a_hdfs.xml
+    entrypoint: ["sh", "/init.sh"]
+    networks:
+      - hadoop-network
+
   namenode:
     build: .
     container_name: namenode
     hostname: namenode
     ports:
       - "9870:9870"   # HDFS Web UI
-      - "9000:9000"   # HDFS Service (cambiado de 8020)
+      - "9000:9000"   # HDFS Service
       - "8042:8042"   # NodeManager Web
     environment:
       - CLUSTER_NAME=hadoop-cluster
