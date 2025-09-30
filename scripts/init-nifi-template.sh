@@ -4,7 +4,7 @@
 NIFI_USER=admin
 NIFI_PASS=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
 NIFI_URL=http://nifi:8080/nifi-api
-TEMPLATE_FILE=/conexion_nifi_a_hdfs.xml
+TEMPLATE_FILE=/TEMPLATE.xml
 
 # 1️⃣ Espera a que NiFi esté listo
 echo "⏳ Esperando a que NiFi esté listo..."
@@ -61,16 +61,49 @@ else
   exit 1
 fi
 
-# 6️⃣ Activar todos los procesadores del root group
-echo "▶️ Activando todos los procesadores del root group..."
+# 6️⃣ Obtén el ID del process group root
 PROCESS_GROUP_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/process-groups/root \
   | grep -o '"id"[ ]*:[ ]*"[^"]*"' \
   | head -n1 \
   | cut -d'"' -f4)
 
+# 7️⃣ Activa todos los procesadores
+echo "▶️ Activando todos los procesadores..."
 curl -s -u $NIFI_USER:$NIFI_PASS \
   -H "Content-Type: application/json" \
   -X PUT \
   -d '{"id":"'$PROCESS_GROUP_ID'","state":"RUNNING"}' \
   $NIFI_URL/flow/process-groups/$PROCESS_GROUP_ID
-echo "✅ Todos los procesadores deberían estar en RUNNING"
+
+# 8️⃣ Obtén el ID del procesador QueryDatabaseTable
+echo "🔍 Buscando el QueryDatabaseTable..."
+QUERY_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/process-groups/root/processors \
+  | jq -r '.processors[] | select(.component.name=="QueryDatabaseTable") | .id')
+
+if [ -z "$QUERY_ID" ]; then
+  echo "❌ No se encontró el procesador QueryDatabaseTable"
+  exit 1
+fi
+
+echo "✅ QueryDatabaseTable ID: $QUERY_ID"
+
+# 9️⃣ Dispara el QueryDatabaseTable una sola vez
+echo "▶️ Ejecutando QueryDatabaseTable..."
+curl -s -u $NIFI_USER:$NIFI_PASS \
+  -H "Content-Type: application/json" \
+  -X PUT \
+  -d '{"id":"'$QUERY_ID'","state":"RUNNING"}' \
+  $NIFI_URL/processors/$QUERY_ID
+
+# Espera unos segundos a que termine
+sleep 10
+
+# 🔟 Detén el QueryDatabaseTable
+echo "⏹️ Deteniendo QueryDatabaseTable..."
+curl -s -u $NIFI_USER:$NIFI_PASS \
+  -H "Content-Type: application/json" \
+  -X PUT \
+  -d '{"id":"'$QUERY_ID'","state":"STOPPED"}' \
+  $NIFI_URL/processors/$QUERY_ID
+
+echo "✅ QueryDatabaseTable ejecutado una vez y detenido, los demás siguen activos"

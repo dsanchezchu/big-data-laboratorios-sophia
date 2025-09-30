@@ -22,6 +22,7 @@ services:
       - nifi_state:/opt/nifi/nifi-current/state
       - nifi_logs:/opt/nifi/nifi-current/logs
       - ./data:/opt/nifi/nifi-current/data
+      - ./drivers:/opt/nifi/nifi-current/drivers
     restart: unless-stopped
     depends_on:
       - namenode
