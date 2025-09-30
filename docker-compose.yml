@@ -47,7 +47,7 @@ services:
       - nifi
     volumes:
       - ./scripts/init-nifi-template.sh:/init.sh
-      - ./template/conexion_nifi_a_hdfs.xml:/conexion_nifi_a_hdfs.xml
+      - ./template:/template
     entrypoint: ["sh", "/init.sh"]
     networks:
       - hadoop-network

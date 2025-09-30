@@ -4,7 +4,7 @@
 NIFI_USER=admin
 NIFI_PASS=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
 NIFI_URL=http://nifi:8080/nifi-api
-TEMPLATE_FILE=/conexion_nifi_a_hdfs.xml
+TEMPLATE_DIR=/template
 
 # 1️⃣ Espera a que NiFi esté listo
 echo "⏳ Esperando a que NiFi esté listo..."
@@ -13,40 +13,56 @@ until curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/status > /dev/null; do
 done
 echo "✅ NiFi está listo"
 
-# 2️⃣ Sube la plantilla
-echo "📤 Subiendo plantilla..."
+# 2️⃣ Obtener el primer archivo xml del directorio
+TEMPLATE_FILE=$(ls $TEMPLATE_DIR/*.xml 2>/dev/null | head -n1)
+
+if [ -z "$TEMPLATE_FILE" ]; then
+  echo "❌ No se encontró ningún XML en $TEMPLATE_DIR"
+  exit 1
+fi
+
+# 3️⃣ Extraer el nombre del template del XML
+TEMPLATE_NAME=$(sed -n 's:.*<name>\(.*\)</name>.*:\1:p' "$TEMPLATE_FILE" | head -n1)
+
+if [ -z "$TEMPLATE_NAME" ]; then
+  echo "❌ No se pudo obtener el nombre del template de $TEMPLATE_FILE"
+  exit 1
+fi
+echo "🔍 Nombre del template: $TEMPLATE_NAME"
+
+# 4️⃣ Revisar si ya existe un template con ese nombre en NiFi
+EXISTING_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/templates \
+  | grep -A5 "\"name\"[ ]*:[ ]*\"$TEMPLATE_NAME\"" \
+  | grep '"id"' \
+  | head -n1 \
+  | cut -d'"' -f4)
+
+if [ -n "$EXISTING_ID" ]; then
+  echo "⚠️  El template '$TEMPLATE_NAME' ya existe con ID $EXISTING_ID. No se subirá de nuevo."
+  exit 0
+fi
+
+# 5️⃣ Subir la plantilla
+echo "📤 Subiendo plantilla: $TEMPLATE_FILE ..."
 curl -s -u $NIFI_USER:$NIFI_PASS \
   -F template=@$TEMPLATE_FILE \
   $NIFI_URL/process-groups/root/templates/upload
 
-# 3️⃣ Espera unos segundos a que NiFi registre la plantilla
+# 6️⃣ Esperar a que NiFi registre la plantilla
 sleep 5
 
-# 4️⃣ Obtén el ID de la plantilla
-TEMPLATE_ID=""
-i=0
-while [ -z "$TEMPLATE_ID" ] && [ $i -lt 10 ]; do
-  TEMPLATE_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/templates \
-    | grep -o '"id"[ ]*:[ ]*"[^"]*"' \
-    | tail -n1 \
-    | cut -d'"' -f4)
-
-  if [ -n "$TEMPLATE_ID" ]; then
-    echo "✅ Plantilla registrada con ID: $TEMPLATE_ID"
-    break
-  fi
-
-  i=$((i+1))
-  echo "⏳ Aún no aparece la plantilla, reintentando ($i)..."
-  sleep 5
-done
+# 7️⃣ Obtener el ID de la nueva plantilla
+TEMPLATE_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/templates \
+  | sed -n "s/.*\"id\"[ ]*:[ ]*\"\([a-f0-9-]\+\)\".*/\1/p" \
+  | head -n1)
 
 if [ -z "$TEMPLATE_ID" ]; then
-  echo "❌ No se pudo obtener el ID de la plantilla"
+  echo "❌ No se pudo obtener el ID del template recién subido"
   exit 1
 fi
+echo "✅ Plantilla registrada con ID: $TEMPLATE_ID"
 
-# 5️⃣ Instancia la plantilla en el root group con coordenadas
+# 8️⃣ Instanciar la plantilla en el root group
 echo "📦 Instanciando plantilla en el root group..."
 HTTP_CODE=$(curl -s -o /tmp/nifi_response.json -w "%{http_code}" -u $NIFI_USER:$NIFI_PASS \
   -H "Content-Type: application/json" \
@@ -61,13 +77,12 @@ else
   exit 1
 fi
 
-# 6️⃣ Obtén el ID del process group root
+# 9️⃣ Activar todos los procesadores en el root
 PROCESS_GROUP_ID=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/flow/process-groups/root \
   | grep -o '"id"[ ]*:[ ]*"[^"]*"' \
   | head -n1 \
   | cut -d'"' -f4)
 
-# 7️⃣ Activa todos los procesadores
 echo "▶️ Activando todos los procesadores..."
 curl -s -u $NIFI_USER:$NIFI_PASS \
   -H "Content-Type: application/json" \
@@ -75,7 +90,5 @@ curl -s -u $NIFI_USER:$NIFI_PASS \
   -d '{"id":"'$PROCESS_GROUP_ID'","state":"RUNNING"}' \
   $NIFI_URL/flow/process-groups/$PROCESS_GROUP_ID
 
-# 8️⃣ Mensaje de éxito
-echo "✅ Plantilla cargada e instanciada correctamente"
+echo "✅ Plantilla '$TEMPLATE_NAME' cargada e instanciada correctamente"
 echo "✅ Todos los procesadores están activos"
-echo "🔍 El driver PostgreSQL está disponible en /opt/nifi/nifi-current/drivers/"
