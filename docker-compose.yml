@@ -48,6 +48,7 @@ services:
     volumes:
       - ./scripts/init-nifi-template.sh:/init.sh
       - ./template:/template
+      - ./.env:/host/.env:ro
     entrypoint: ["sh", "/init.sh"]
     networks:
       - hadoop-network
