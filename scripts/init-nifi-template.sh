@@ -34,8 +34,14 @@ if [ -f "/.env" ]; then
   SUPABASE_PASSWORD=$(grep "^SUPABASE_PASSWORD=" /.env | cut -d'=' -f2- | tr -d '"')
   DATABASE_DRIVER=$(grep "^DATABASE_DRIVER=" /.env | cut -d'=' -f2- | tr -d '"')
   
+  # Convertir a minúsculas
+  supabase_url=$(echo "$SUPABASE_URL" | tr '[:upper:]' '[:lower:]')
+  supabase_username=$(echo "$SUPABASE_USERNAME" | tr '[:upper:]' '[:lower:]')
+  supabase_password=$(echo "$SUPABASE_PASSWORD" | tr '[:upper:]' '[:lower:]')
+  database_driver=$(echo "$DATABASE_DRIVER" | tr '[:upper:]' '[:lower:]')
+  
   # Verificar que las credenciales no sean valores de ejemplo
-  if [ "$SUPABASE_URL" != "your_supabase_url_here" ] && [ "$SUPABASE_USERNAME" != "your_username_here" ] && [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_USERNAME" ]; then
+  if [ "$supabase_url" != "your_supabase_url_here" ] && [ "$supabase_username" != "your_username_here" ] && [ -n "$supabase_url" ] && [ -n "$supabase_username" ]; then
     echo "✅ Credenciales válidas encontradas en .env"
     
     # Actualizar SupabaseConfig.json con credenciales reales
@@ -50,7 +56,7 @@ if [ -f "/.env" ]; then
           "name": "supabase_url",
           "description": "URL de conexión a Supabase",
           "sensitive": false,
-          "value": "$SUPABASE_URL"
+          "value": "$supabase_url"
         }
       },
       {
@@ -58,7 +64,7 @@ if [ -f "/.env" ]; then
           "name": "supabase_username",
           "description": "Usuario de la base de datos",
           "sensitive": false,
-          "value": "$SUPABASE_USERNAME"
+          "value": "$supabase_username"
         }
       },
       {
@@ -66,7 +72,7 @@ if [ -f "/.env" ]; then
           "name": "supabase_password",
           "description": "Contraseña de la base de datos",
           "sensitive": true,
-          "value": "$SUPABASE_PASSWORD"
+          "value": "$supabase_password"
         }
       },
       {
@@ -74,7 +80,7 @@ if [ -f "/.env" ]; then
           "name": "database_driver",
           "description": "Driver JDBC para PostgreSQL",
           "sensitive": false,
-          "value": "$DATABASE_DRIVER"
+          "value": "$database_driver"
         }
       }
     ]
