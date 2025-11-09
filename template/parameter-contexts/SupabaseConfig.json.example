@@ -11,7 +11,7 @@
                     "name": "supabase_url",
                     "description": "URL completa de Supabase (incluye jdbc:postgresql://)",
                     "sensitive": false,
-                    "value": "jdbc:postgresql://aws-1-us-east-2.pooler.supabase.com:6543/postgres"
+                    "value": "xxxx"
                 }
             },
             {
@@ -19,7 +19,7 @@
                     "name": "supabase_username",
                     "description": "Usuario de Supabase (generalmente postgres.tuproyecto)",
                     "sensitive": false,
-                    "value": "postgres.frmhtdodlrbtxltoomrb"
+                    "value": "xxxxx"
                 }
             },
             {
@@ -27,7 +27,7 @@
                     "name": "supabase_password",
                     "description": "Contraseña de tu proyecto Supabase",
                     "sensitive": true,
-                    "value": "Slipnot14023"
+                    "value": "xxxxxxxx"
                 }
             },
             {
