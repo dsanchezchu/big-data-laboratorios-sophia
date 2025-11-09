@@ -1,5 +1,6 @@
 # Archivos de Docker
 .env.local
+.env
 *.log
 
 # Volúmenes y datos de Docker
@@ -48,3 +49,6 @@ error.log
 # Archivos de configuración local (si existen)
 config/local/
 secrets/
+
+# Archivos de configuración sensibles de NiFi
+template/parameter-contexts/SupabaseConfig.json
