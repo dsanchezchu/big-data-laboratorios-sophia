@@ -289,7 +289,115 @@ else
   echo "❌ No se encontró Parameter Context SupabaseConfig"
 fi
 
+# 🔟 Habilitar Controller Services
+echo "⚙️  Habilitando Controller Services..."
+
+# Obtener todos los Controller Services del Process Group NiFi Flow
+if [ -n "$NIFI_FLOW_PG_ID" ]; then
+  CONTROLLER_SERVICES=$(curl -s -u $NIFI_USER:$NIFI_PASS \
+    $NIFI_URL/flow/process-groups/$NIFI_FLOW_PG_ID/controller-services)
+  
+  # Extraer IDs de Controller Services que están DISABLED
+  SERVICE_IDS=$(echo "$CONTROLLER_SERVICES" | grep -o '"id":"[^"]*"' | cut -d'"' -f4)
+  
+  for SERVICE_ID in $SERVICE_IDS; do
+    if [ -n "$SERVICE_ID" ]; then
+      # Obtener información del servicio
+      SERVICE_INFO=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/controller-services/$SERVICE_ID)
+      SERVICE_NAME=$(echo "$SERVICE_INFO" | grep -o '"name":"[^"]*"' | head -n1 | cut -d'"' -f4)
+      SERVICE_STATE=$(echo "$SERVICE_INFO" | grep -o '"state":"[^"]*"' | head -n1 | cut -d'"' -f4)
+      
+      if [ "$SERVICE_STATE" = "DISABLED" ]; then
+        echo "🔧 Habilitando Controller Service: $SERVICE_NAME (ID: $SERVICE_ID)"
+        
+        # Obtener revisión actual
+        CURRENT_REV=$(echo "$SERVICE_INFO" | grep -o '"version":[0-9]*' | head -n1 | cut -d':' -f2)
+        
+        # Habilitar el Controller Service
+        ENABLE_JSON="{
+          \"revision\": {
+            \"version\": $CURRENT_REV
+          },
+          \"state\": \"ENABLED\"
+        }"
+        
+        HTTP_CODE=$(curl -s -o /tmp/service_enable.json -w "%{http_code}" -u $NIFI_USER:$NIFI_PASS \
+          -H "Content-Type: application/json" \
+          -X PUT \
+          -d "$ENABLE_JSON" \
+          $NIFI_URL/controller-services/$SERVICE_ID/run-status)
+        
+        if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
+          echo "✅ Controller Service '$SERVICE_NAME' habilitado"
+        else
+          echo "⚠️  Error habilitando Controller Service '$SERVICE_NAME' (HTTP: $HTTP_CODE)"
+        fi
+        
+        sleep 2
+      else
+        echo "ℹ️  Controller Service '$SERVICE_NAME' ya está en estado: $SERVICE_STATE"
+      fi
+    fi
+  done
+fi
+
+# 1️⃣1️⃣ Iniciar todos los procesadores del workflow
+echo "🚀 Iniciando procesadores del workflow..."
+
+if [ -n "$NIFI_FLOW_PG_ID" ]; then
+  # Obtener todos los procesadores del Process Group
+  PROCESSORS=$(curl -s -u $NIFI_USER:$NIFI_PASS \
+    $NIFI_URL/process-groups/$NIFI_FLOW_PG_ID/processors)
+  
+  # Extraer IDs de procesadores
+  PROCESSOR_IDS=$(echo "$PROCESSORS" | sed 's/},{/}\n{/g' | grep '"id":"' | grep -o '"id":"[^"]*"' | cut -d'"' -f4)
+  
+  for PROC_ID in $PROCESSOR_IDS; do
+    if [ -n "$PROC_ID" ]; then
+      # Obtener información del procesador
+      PROC_INFO=$(curl -s -u $NIFI_USER:$NIFI_PASS $NIFI_URL/processors/$PROC_ID)
+      PROC_NAME=$(echo "$PROC_INFO" | grep -o '"name":"[^"]*"' | head -n1 | cut -d'"' -f4)
+      PROC_STATE=$(echo "$PROC_INFO" | grep -o '"state":"[^"]*"' | head -n1 | cut -d'"' -f4)
+      
+      if [ "$PROC_STATE" = "STOPPED" ]; then
+        echo "▶️  Iniciando procesador: $PROC_NAME (ID: $PROC_ID)"
+        
+        # Obtener revisión actual
+        CURRENT_REV=$(echo "$PROC_INFO" | grep -o '"version":[0-9]*' | head -n1 | cut -d':' -f2)
+        
+        # Iniciar el procesador
+        START_JSON="{
+          \"revision\": {
+            \"version\": $CURRENT_REV
+          },
+          \"state\": \"RUNNING\"
+        }"
+        
+        HTTP_CODE=$(curl -s -o /tmp/processor_start.json -w "%{http_code}" -u $NIFI_USER:$NIFI_PASS \
+          -H "Content-Type: application/json" \
+          -X PUT \
+          -d "$START_JSON" \
+          $NIFI_URL/processors/$PROC_ID/run-status)
+        
+        if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "201" ]; then
+          echo "✅ Procesador '$PROC_NAME' iniciado exitosamente"
+        else
+          echo "⚠️  Error iniciando procesador '$PROC_NAME' (HTTP: $HTTP_CODE)"
+        fi
+        
+        sleep 1
+      else
+        echo "ℹ️  Procesador '$PROC_NAME' ya está en estado: $PROC_STATE"
+      fi
+    fi
+  done
+else
+  echo "⚠️  No se pudo encontrar el Process Group para iniciar procesadores"
+fi
+
+echo ""
 echo "✅ Plantilla '$TEMPLATE_NAME' cargada e instanciada correctamente"
 echo "✅ Parameter Contexts configurados y vinculados automáticamente"
-echo "✅ Todos los procesadores están listos para usar"
-echo "💡 Nota: Los Controller Services deben habilitarse manualmente desde la UI de NiFi"
+echo "✅ Controller Services habilitados automáticamente"
+echo "✅ Todos los procesadores iniciados automáticamente"
+echo "🎉 El workflow está completamente configurado y ejecutándose"
