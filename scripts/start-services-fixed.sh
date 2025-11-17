@@ -90,6 +90,14 @@ case $SERVICE_TYPE in
         \$HADOOP_HOME/bin/hdfs dfs -test -d /spark-logs || (\$HADOOP_HOME/bin/hdfs dfs -mkdir -p /spark-logs && \$HADOOP_HOME/bin/hdfs dfs -chmod 1777 /spark-logs)
         echo '✅ Directorios HDFS verificados'
 
+        # Crear archivo de JARs de Spark en HDFS (solo si no existe)
+        if ! \$HADOOP_HOME/bin/hdfs dfs -test -e /spark-jars/spark-libs.tgz; then
+            echo '📦 Creando archivo de JARs de Spark para YARN...'
+            bash /scripts/init-spark-jars.sh
+        else
+            echo '✅ spark-libs.tgz ya existe en HDFS'
+        fi
+
         # Iniciar YARN ResourceManager
         echo '🎯 Iniciando YARN ResourceManager...'
         \$HADOOP_HOME/bin/yarn --daemon start resourcemanager
