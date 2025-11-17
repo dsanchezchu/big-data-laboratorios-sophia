@@ -17,4 +17,23 @@
         <name>dfs.permissions</name>
         <value>false</value>
     </property>
+
+    <!-- Safe Mode Optimization: reduce threshold for faster startup -->
+    <property>
+        <name>dfs.namenode.safemode.threshold-pct</name>
+        <value>0.5f</value>
+        <description>Salir de safe mode cuando 50% de bloques estén reportados (default: 0.999)</description>
+    </property>
+
+    <property>
+        <name>dfs.namenode.safemode.min.datanodes</name>
+        <value>1</value>
+        <description>Mínimo 1 DataNode debe reportar para salir de safe mode</description>
+    </property>
+
+    <property>
+        <name>dfs.namenode.safemode.extension</name>
+        <value>10000</value>
+        <description>Esperar 10 segundos después de alcanzar el threshold (default: 30000)</description>
+    </property>
 </configuration>

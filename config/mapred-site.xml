@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Framework Configuration -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+
+    <!-- JobHistory Server Configuration -->
+    <property>
+        <name>mapreduce.jobhistory.address</name>
+        <value>namenode:10020</value>
+    </property>
+
+    <property>
+        <name>mapreduce.jobhistory.webapp.address</name>
+        <value>namenode:19888</value>
+    </property>
+
+    <!-- Memory Configuration -->
+    <property>
+        <name>mapreduce.map.memory.mb</name>
+        <value>1024</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.memory.mb</name>
+        <value>1024</value>
+    </property>
+
+    <property>
+        <name>mapreduce.map.java.opts</name>
+        <value>-Xmx819m</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.java.opts</name>
+        <value>-Xmx819m</value>
+    </property>
+
+    <!-- Application Master Configuration -->
+    <property>
+        <name>yarn.app.mapreduce.am.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+    </property>
+
+    <property>
+        <name>mapreduce.map.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+    </property>
+
+    <property>
+        <name>mapreduce.reduce.env</name>
+        <value>HADOOP_MAPRED_HOME=/opt/hadoop</value>
+    </property>
+</configuration>

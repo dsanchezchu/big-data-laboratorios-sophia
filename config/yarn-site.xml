@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- ResourceManager Configuration -->
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>namenode</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.address</name>
+        <value>namenode:8032</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.scheduler.address</name>
+        <value>namenode:8030</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.resource-tracker.address</name>
+        <value>namenode:8031</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.webapp.address</name>
+        <value>namenode:8088</value>
+    </property>
+
+    <!-- NodeManager Configuration -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+        <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>4096</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>2</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
+    </property>
+
+    <!-- Scheduler Configuration -->
+    <property>
+        <name>yarn.scheduler.minimum-allocation-mb</name>
+        <value>512</value>
+    </property>
+
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>4096</value>
+    </property>
+
+    <!-- Application Configuration -->
+    <property>
+        <name>yarn.app.mapreduce.am.resource.mb</name>
+        <value>1024</value>
+    </property>
+
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>yarn.log.server.url</name>
+        <value>http://namenode:19888/jobhistory/logs</value>
+    </property>
+</configuration>
