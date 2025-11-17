@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.3">
     <description></description>
-    <groupId>9b9f835e-0199-1000-8ef8-f57efdf46ed1</groupId>
-    <name>flow_aut2</name>
+    <groupId>92b0b8cd-019a-1000-d9aa-9a580651acb6</groupId>
+    <name>nifi2</name>
     <snippet>
         <connections>
-            <id>0f437d9f-2e2d-327f-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>80e3e090-a0c8-3437-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>133ccdca-8913-3b43-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>707d9b90-abce-3c97-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -23,20 +23,20 @@
             <name></name>
             <selectedRelationships>success</selectedRelationships>
             <source>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>a27773ee-b73b-3b44-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>78326451-e976-3942-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>3fc94416-6d12-3032-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>8c3058ce-3cf0-3203-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>ee1c90df-4f78-3a2a-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>38ca117e-1e51-3bd5-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -48,20 +48,20 @@
             <name></name>
             <selectedRelationships>success</selectedRelationships>
             <source>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>e50f5c06-58b3-39bf-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>707d9b90-abce-3c97-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>c3fe0407-e2f2-37d7-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>9c67207a-d3ce-3649-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>a27773ee-b73b-3b44-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>fe86928c-b45b-33e5-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -73,15 +73,40 @@
             <name></name>
             <selectedRelationships>success</selectedRelationships>
             <source>
-                <groupId>47ef400a-3d1f-3989-0000-000000000000</groupId>
-                <id>95f66413-47a7-3ba1-0000-000000000000</id>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>38ca117e-1e51-3bd5-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>b1bc1663-502c-3998-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>43190dda-0b41-3e16-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>d4f060ed-7751-3b50-0000-000000000000</groupId>
+                <id>89edfb43-1679-3b3a-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <controllerServices>
-            <id>05676198-d303-3a92-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>92554982-b879-3c2a-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <bulletinLevel>WARN</bulletinLevel>
             <bundle>
                 <artifact>nifi-dbcp-service-nar</artifact>
@@ -271,15 +296,105 @@
                     <value>-1</value>
                 </entry>
             </properties>
-            <state>DISABLED</state>
+            <state>ENABLED</state>
             <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
         </controllerServices>
         <processors>
-            <id>133ccdca-8913-3b43-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>38ca117e-1e51-3bd5-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <position>
-                <x>0.0</x>
-                <y>480.0</y>
+                <x>16.0</x>
+                <y>504.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-update-attribute-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.23.2</version>
+            </bundle>
+            <config>
+                <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                        <value>
+                            <name>Delete Attributes Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>
+                            <name>Store State</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                        <value>
+                            <name>Stateful Variables Initial Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>
+                            <name>canonical-value-lookup-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>
+                            <name>filename</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>Do not store state</value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>datos.json</value>
+                    </entry>
+                </properties>
+                <retryCount>10</retryCount>
+                <runDurationMillis>25</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>UpdateAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+                <retry>false</retry>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
+            <id>43190dda-0b41-3e16-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
+            <position>
+                <x>520.0</x>
+                <y>256.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hadoop-nar</artifact>
@@ -497,15 +612,91 @@
                 <name>success</name>
                 <retry>false</retry>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.hadoop.PutHDFS</type>
         </processors>
         <processors>
-            <id>95f66413-47a7-3ba1-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>707d9b90-abce-3c97-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <position>
-                <x>8.0</x>
+                <x>40.0</x>
+                <y>256.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-avro-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.23.2</version>
+            </bundle>
+            <config>
+                <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>JSON container options</key>
+                        <value>
+                            <name>JSON container options</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Wrap Single Record</key>
+                        <value>
+                            <name>Wrap Single Record</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Avro schema</key>
+                        <value>
+                            <name>Avro schema</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <maxBackoffPeriod>10 mins</maxBackoffPeriod>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>JSON container options</key>
+                        <value>array</value>
+                    </entry>
+                    <entry>
+                        <key>Wrap Single Record</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Avro schema</key>
+                    </entry>
+                </properties>
+                <retryCount>10</retryCount>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ConvertAvroToJSON</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+                <retry>false</retry>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+                <retry>false</retry>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.avro.ConvertAvroToJSON</type>
+        </processors>
+        <processors>
+            <id>78326451-e976-3942-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
+            <position>
+                <x>40.0</x>
                 <y>8.0</y>
             </position>
             <bundle>
@@ -628,6 +819,12 @@
                             <name>dbf-default-scale</name>
                         </value>
                     </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>
+                            <name>filename</name>
+                        </value>
+                    </entry>
                 </descriptors>
                 <executionNode>PRIMARY</executionNode>
                 <lossTolerant>false</lossTolerant>
@@ -636,7 +833,7 @@
                 <properties>
                     <entry>
                         <key>Database Connection Pooling Service</key>
-                        <value>05676198-d303-3a92-0000-000000000000</value>
+                        <value>92554982-b879-3c2a-0000-000000000000</value>
                     </entry>
                     <entry>
                         <key>db-fetch-db-type</key>
@@ -701,11 +898,15 @@
                         <key>dbf-default-scale</key>
                         <value>0</value>
                     </entry>
+                    <entry>
+                        <key>filename</key>
+                        <value>reporte_mensual.json</value>
+                    </entry>
                 </properties>
                 <retryCount>10</retryCount>
                 <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>1 min</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <schedulingPeriod>0 0 8 1 * ?</schedulingPeriod>
+                <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>true</executionNodeRestricted>
@@ -715,91 +916,15 @@
                 <name>success</name>
                 <retry>false</retry>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.QueryDatabaseTable</type>
         </processors>
         <processors>
-            <id>a27773ee-b73b-3b44-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>89edfb43-1679-3b3a-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <position>
-                <x>8.0</x>
-                <y>256.0</y>
-            </position>
-            <bundle>
-                <artifact>nifi-avro-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.23.2</version>
-            </bundle>
-            <config>
-                <backoffMechanism>PENALIZE_FLOWFILE</backoffMechanism>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>JSON container options</key>
-                        <value>
-                            <name>JSON container options</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Wrap Single Record</key>
-                        <value>
-                            <name>Wrap Single Record</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Avro schema</key>
-                        <value>
-                            <name>Avro schema</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <maxBackoffPeriod>10 mins</maxBackoffPeriod>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>JSON container options</key>
-                        <value>array</value>
-                    </entry>
-                    <entry>
-                        <key>Wrap Single Record</key>
-                        <value>false</value>
-                    </entry>
-                    <entry>
-                        <key>Avro schema</key>
-                    </entry>
-                </properties>
-                <retryCount>10</retryCount>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>ConvertAvroToJSON</name>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>failure</name>
-                <retry>false</retry>
-            </relationships>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>success</name>
-                <retry>false</retry>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.avro.ConvertAvroToJSON</type>
-        </processors>
-        <processors>
-            <id>e50f5c06-58b3-39bf-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
-            <position>
-                <x>496.0</x>
+                <x>528.0</x>
                 <y>0.0</y>
             </position>
             <bundle>
@@ -950,16 +1075,16 @@
                 <name>success</name>
                 <retry>false</retry>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.standard.GetFile</type>
         </processors>
         <processors>
-            <id>ee1c90df-4f78-3a2a-0000-000000000000</id>
-            <parentGroupId>47ef400a-3d1f-3989-0000-000000000000</parentGroupId>
+            <id>fe86928c-b45b-33e5-0000-000000000000</id>
+            <parentGroupId>d4f060ed-7751-3b50-0000-000000000000</parentGroupId>
             <position>
-                <x>488.0</x>
-                <y>256.0</y>
+                <x>0.0</x>
+                <y>784.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hadoop-nar</artifact>
@@ -1177,10 +1302,10 @@
                 <name>success</name>
                 <retry>false</retry>
             </relationships>
-            <state>STOPPED</state>
+            <state>RUNNING</state>
             <style/>
             <type>org.apache.nifi.processors.hadoop.PutHDFS</type>
         </processors>
     </snippet>
-    <timestamp>09/30/2025 17:25:25 UTC</timestamp>
+    <timestamp>11/17/2025 13:04:53 PET</timestamp>
 </template>
