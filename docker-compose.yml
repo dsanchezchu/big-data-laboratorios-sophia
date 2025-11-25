@@ -152,10 +152,12 @@ services:
     ports:
       - "8888:8888"   # Jupyter Notebook
       - "4040:4040"   # Spark UI
+      - "8501:8501"   # Streamlit
     environment:
       - JUPYTER_ENABLE_LAB=yes
     volumes:
       - ./notebooks:/home/jupyter/notebooks
+      - ./frontend:/home/jupyter/frontend
       - ./config/jupyter_notebook_config.py:/home/jupyter/.jupyter/jupyter_notebook_config.py
       - ./scripts:/scripts
     working_dir: /home/jupyter/notebooks

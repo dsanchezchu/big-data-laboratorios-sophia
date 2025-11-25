@@ -1,0 +1,5 @@
+streamlit
+pyspark==3.4.1
+pandas
+pyarrow
+fastparquet

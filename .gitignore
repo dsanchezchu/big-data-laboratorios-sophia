@@ -13,6 +13,10 @@ data/output/
 Thumbs.db
 *.tmp
 *.temp
+*.tar.gz
+*.parquet
+*.zip
+*.tgz
 
 # Archivos de IDE
 .vscode/

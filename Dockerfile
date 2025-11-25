@@ -33,16 +33,33 @@ RUN useradd -m -s /bin/bash hadoop && \
     adduser hadoop sudo
 
 # Descargar e instalar Hadoop
-RUN wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz -O /tmp/hadoop.tar.gz && \
-    tar -xzf /tmp/hadoop.tar.gz -C /opt && \
-    mv /opt/hadoop-3.3.6 $HADOOP_HOME && \
-    rm /tmp/hadoop.tar.gz
+# Prefer local installers under 'installer/', otherwise download
+COPY installer/ /tmp/installer/
 
-# Descargar e instalar Spark
-RUN wget https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz -O /tmp/spark.tar.gz && \
-    tar -xzf /tmp/spark.tar.gz -C /opt && \
-    mv /opt/spark-3.4.1-bin-hadoop3 $SPARK_HOME && \
-    rm /tmp/spark.tar.gz
+RUN set -eux; \
+    # Hadoop: prefer tarball, then directory, otherwise download tarball
+    if [ -f /tmp/installer/hadoop-3.3.6.tar.gz ]; then \
+        echo "Using local Hadoop tarball"; cp /tmp/installer/hadoop-3.3.6.tar.gz /tmp/hadoop.tar.gz; \
+    elif [ -d /tmp/installer/hadoop-3.3.6 ]; then \
+        echo "Using local Hadoop directory"; mv /tmp/installer/hadoop-3.3.6 $HADOOP_HOME; \
+    else \
+        echo "Downloading Hadoop"; wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz -O /tmp/hadoop.tar.gz; \
+    fi; \
+    if [ -f /tmp/hadoop.tar.gz ]; then \
+        tar -xzf /tmp/hadoop.tar.gz -C /opt && mv /opt/hadoop-3.3.6 $HADOOP_HOME && rm /tmp/hadoop.tar.gz; \
+    fi; \
+    # Spark: prefer tarball, then directory, otherwise download tarball
+    if [ -f /tmp/installer/spark-3.4.1-bin-hadoop3.tgz ]; then \
+        echo "Using local Spark tarball"; cp /tmp/installer/spark-3.4.1-bin-hadoop3.tgz /tmp/spark.tar.gz; \
+    elif [ -d /tmp/installer/spark-3.4.1-bin-hadoop3 ]; then \
+        echo "Using local Spark directory"; mv /tmp/installer/spark-3.4.1-bin-hadoop3 $SPARK_HOME; \
+    else \
+        echo "Downloading Spark"; wget https://archive.apache.org/dist/spark/spark-3.4.1/spark-3.4.1-bin-hadoop3.tgz -O /tmp/spark.tar.gz; \
+    fi; \
+    if [ -f /tmp/spark.tar.gz ]; then \
+        tar -xzf /tmp/spark.tar.gz -C /opt && mv /opt/spark-3.4.1-bin-hadoop3 $SPARK_HOME && rm /tmp/spark.tar.gz; \
+    fi; \
+    rm -rf /tmp/installer
 
 # Configurar permisos
 RUN chown -R hadoop:hadoop $HADOOP_HOME && \
@@ -64,7 +81,10 @@ RUN python3 -m venv /opt/python-env && \
         numpy \
         findspark \
         matplotlib \
-        seaborn
+        seaborn \
+        pyarrow \
+        fastparquet \
+        streamlit
 
 # Agregar entorno virtual al PATH
 ENV PATH="/opt/python-env/bin:$PATH"
