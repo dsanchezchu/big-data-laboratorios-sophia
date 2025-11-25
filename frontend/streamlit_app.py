@@ -48,7 +48,7 @@ zonas_df = df_full.select("Nombre_Zona", "Cliente").distinct().toPandas()
 zonas = ["Todas"] + sorted(zonas_df["Nombre_Zona"].unique().tolist())
 
 # Sidebar con configuración
-st.sidebar.title("⚙️ Configuración")
+st.sidebar.title("Configuración")
 st.sidebar.write("**Año:** 2025")
 st.sidebar.write("**Modelo:** " + MODEL_PATH)
 st.sidebar.write("**Dataset:** " + DATA_PATH)
@@ -76,13 +76,6 @@ cliente_sel = st.sidebar.selectbox(
     key="cliente_selectbox"
 )
 
-mes = st.sidebar.selectbox(
-    "Mes", 
-    ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"], 
-    index=9,
-    key="mes_selectbox"
-)
-
 top_n = st.sidebar.slider(
     "Top N productos", 
     1, 20, 5,
@@ -90,119 +83,141 @@ top_n = st.sidebar.slider(
 )
 
 # Header principal
-st.title("🎯 Recomendador - Random Forest")
+st.title("Recomendador - Random Forest")
 st.markdown("### Sistema de Recomendación de Productos - Sophia Labs")
 st.markdown("---")
 
 # Información del cliente seleccionado
-col1, col2 = st.columns([2, 1])
+st.markdown("#### Cliente seleccionado")
+st.info(f"**{cliente_sel}**")
 
-with col1:
-    st.markdown("#### 👤 Cliente seleccionado")
-    st.info(f"**{cliente_sel}**")
+# Obtener información del cliente para mostrar contexto
+info = df_full.filter(df_full.Cliente == cliente_sel).select("Region","Nombre_Zona").limit(1).collect()
 
-with col2:
-    st.markdown("#### 📅 Mes de análisis")
-    st.info(f"**{mes}**")
+if not info:
+    st.error("Cliente no encontrado")
+    st.stop()
 
-# Botón de generación con key único
-if st.button("🚀 Generar recomendaciones", key="generar_button"):
+region = info[0]["Region"]
+zona = info[0]["Nombre_Zona"]
+
+# Mostrar contexto del cliente
+st.success(f"Zona: {zona} | Región: {region}")
+
+# Lista de meses para la barra de selección
+meses = ["ENE","FEB","MAR","ABR","MAY","JUN","JUL","AGO","SEP","OCT","NOV","DIC"]
+
+# Selector de mes como barra horizontal
+st.markdown("---")
+st.markdown("### Seleccione el mes para generar recomendaciones")
+mes_sel = st.radio(
+    "Mes",
+    options=meses,
+    index=9,  # OCT por defecto
+    horizontal=True,
+    key="mes_radio",
+    label_visibility="collapsed"
+)
+
+mes_num = meses.index(mes_sel) + 1
+
+# Botón de generación
+if st.button("Generar recomendaciones", key="generar_button"):
     with st.spinner("Generando recomendaciones..."):
-        info = df_full.filter(df_full.Cliente == cliente_sel).select("Region","Nombre_Zona").limit(1).collect()
+        # Preparar catálogo
+        catalogo = df_full.select(
+            "Producto","Precio_Caja","ID_Articulo",
+            "Venta_PY_Zona_Cajas","Venta_PY_Familia_Cajas",
+            "Meta_Zona_Cajas","Precio_Promedio_PY_Caja"
+        ).dropDuplicates(["Producto"]).orderBy(desc("Venta_PY_Zona_Cajas")).limit(200)
         
-        if not info:
-            st.error("❌ Cliente no encontrado")
+        df_sim = catalogo.withColumn("Cliente", lit(cliente_sel)) \
+                         .withColumn("Region", lit(region)) \
+                         .withColumn("Nombre_Zona", lit(zona)) \
+                         .withColumn("Mes", lit(mes_sel)) \
+                         .withColumn("Mes_Num", lit(mes_num))
+        
+        if model is None:
+            st.warning("Modelo no cargado. Mostrando catálogo sin predicción.")
+            df_out = df_sim.toPandas()
+            st.dataframe(df_out.head(top_n), use_container_width=True)
         else:
-            region = info[0]["Region"]
-            zona = info[0]["Nombre_Zona"]
+            # Ejecutar predicciones
+            preds = model.transform(df_sim)
+            cols = ["Producto","Precio_Caja","prediction_final","prediction_piezas"]
+            pdf = preds.select(*cols).orderBy(desc("prediction_final")).limit(top_n).toPandas()
             
-            # Mostrar contexto del cliente
-            st.success(f"✅ Cliente encontrado: **Zona: {zona}** | **Región: {region}**")
+            # Calcular ingreso estimado
+            pdf["ingreso_estimado"] = pdf["Precio_Caja"] * pdf["prediction_final"]
+            pdf = pdf.round(2)
             
-            # Preparar catálogo
-            catalogo = df_full.select(
-                "Producto","Precio_Caja","ID_Articulo",
-                "Venta_PY_Zona_Cajas","Venta_PY_Familia_Cajas",
-                "Meta_Zona_Cajas","Precio_Promedio_PY_Caja"
-            ).dropDuplicates(["Producto"]).orderBy(desc("Venta_PY_Zona_Cajas")).limit(200)
+            # Renombrar columnas para mejor visualización
+            pdf_display = pdf.rename(columns={
+                "Producto": "Producto",
+                "Precio_Caja": "Precio/Caja",
+                "prediction_final": "Demanda (Cajas)",
+                "prediction_piezas": "Demanda (Piezas)",
+                "ingreso_estimado": "Ingreso Estimado"
+            })
             
-            df_sim = catalogo.withColumn("Cliente", lit(cliente_sel)) \
-                             .withColumn("Region", lit(region)) \
-                             .withColumn("Nombre_Zona", lit(zona)) \
-                             .withColumn("Mes", lit(mes)) \
-                             .withColumn("Mes_Num", lit(10))
+            # Tabs para diferentes vistas
+            tab1, tab2, tab3 = st.tabs(["Tabla", "Gráficos", "Análisis de Ingresos"])
             
-            if model is None:
-                st.warning("⚠️ Modelo no cargado. Mostrando catálogo sin predicción.")
-                df_out = df_sim.toPandas()
-                st.dataframe(df_out.head(top_n), use_container_width=True)
-            else:
-                # Ejecutar predicciones
-                preds = model.transform(df_sim)
-                cols = ["Producto","Precio_Caja","prediction_final","prediction_piezas"]
-                pdf = preds.select(*cols).orderBy(desc("prediction_final")).limit(top_n).toPandas()
+            with tab1:
+                st.subheader(f"Top {top_n} Productos Recomendados - {mes_sel} 2025")
+                st.dataframe(
+                    pdf_display,
+                    use_container_width=True,
+                    hide_index=True
+                )
+            
+            with tab2:
+                st.subheader("Demanda Estimada por Producto")
                 
-                # Calcular ingreso estimado
-                pdf["ingreso_estimado"] = pdf["Precio_Caja"] * pdf["prediction_final"]
-                pdf = pdf.round(2)
+                # Gráfico de barras
+                st.markdown("##### Gráfico de Barras")
+                st.bar_chart(
+                    pdf.set_index("Producto")["prediction_final"],
+                    use_container_width=True
+                )
                 
-                # Renombrar columnas para mejor visualización
-                pdf_display = pdf.rename(columns={
-                    "Producto": "📦 Producto",
-                    "Precio_Caja": "💰 Precio/Caja",
-                    "prediction_final": "📊 Demanda (Cajas)",
-                    "prediction_piezas": "🔢 Demanda (Piezas)",
-                    "ingreso_estimado": "💵 Ingreso Estimado"
-                })
+                # Gráfico lineal
+                st.markdown("##### Tendencia de Demanda")
+                st.line_chart(
+                    pdf.set_index("Producto")["prediction_final"],
+                    use_container_width=True
+                )
                 
-                # Tabs para diferentes vistas
-                tab1, tab2, tab3 = st.tabs(["📋 Tabla", "📊 Gráficos", "💰 Análisis de Ingresos"])
-                
-                with tab1:
-                    st.subheader(f"Top {top_n} Productos Recomendados")
-                    st.dataframe(
-                        pdf_display,
-                        use_container_width=True,
-                        hide_index=True
-                    )
-                
-                with tab2:
-                    st.subheader("Demanda Estimada por Producto")
-                    st.bar_chart(
-                        pdf.set_index("Producto")["prediction_final"],
-                        use_container_width=True
-                    )
-                    
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.metric(
-                            "Total Cajas Estimadas",
-                            f"{pdf['prediction_final'].sum():.0f}"
-                        )
-                    with col2:
-                        st.metric(
-                            "Precio Promedio",
-                            f"${pdf['Precio_Caja'].mean():.2f}"
-                        )
-                
-                with tab3:
-                    st.subheader("Ingreso Estimado por Producto")
-                    pdf_ingresos = pdf[["Producto","ingreso_estimado"]].sort_values(
-                        "ingreso_estimado", 
-                        ascending=False
-                    )
-                    
-                    st.bar_chart(
-                        pdf_ingresos.set_index("Producto")["ingreso_estimado"],
-                        use_container_width=True
-                    )
-                    
+                col1, col2 = st.columns(2)
+                with col1:
                     st.metric(
-                        "Ingreso Total Estimado",
-                        f"${pdf['ingreso_estimado'].sum():,.2f}"
+                        "Total Cajas Estimadas",
+                        f"{pdf['prediction_final'].sum():.0f}"
                     )
-                    
-                    st.table(pdf_ingresos)
+                with col2:
+                    st.metric(
+                        "Precio Promedio",
+                        f"${pdf['Precio_Caja'].mean():.2f}"
+                    )
+            
+            with tab3:
+                st.subheader("Ingreso Estimado por Producto")
+                pdf_ingresos = pdf[["Producto","ingreso_estimado"]].sort_values(
+                    "ingreso_estimado", 
+                    ascending=False
+                )
+                
+                st.bar_chart(
+                    pdf_ingresos.set_index("Producto")["ingreso_estimado"],
+                    use_container_width=True
+                )
+                
+                st.metric(
+                    "Ingreso Total Estimado",
+                    f"${pdf['ingreso_estimado'].sum():,.2f}"
+                )
+                
+                st.table(pdf_ingresos)
 
 # Footer
 st.markdown("---")
