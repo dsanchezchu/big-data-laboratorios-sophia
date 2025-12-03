@@ -20,4 +20,4 @@ else
 fi
 
 echo "Iniciando Streamlit..."
-streamlit run /home/jupyter/frontend/streamlit_app_v2.py --server.address 0.0.0.0 --server.port 8501
+streamlit run /home/jupyter/frontend/dashboard_integral.py --server.address 0.0.0.0 --server.port 8501

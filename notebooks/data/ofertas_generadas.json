@@ -1,0 +1,4778 @@
+[
+  {
+    "cliente": "CUIDA DIGITAL S.A.C.",
+    "zona": "CALLAO",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 229134.89,
+      "volumen_historico_cajas": 2786,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 56.53,
+        "precio_sugerido": 56.53,
+        "precio_minimo_negociable": 48.05,
+        "precio_maximo_negociable": 62.19,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 291,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 56.53476190476191,
+            "mensaje": "Precio estándar: S/. 56.53/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.70802380952381,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.71/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.88128571428572,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.88/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 11,
+        "score_prioridad": 53.31
+      },
+      {
+        "posicion": 2,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 42.6,
+        "precio_sugerido": 42.6,
+        "precio_minimo_negociable": 36.21,
+        "precio_maximo_negociable": 46.85,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 296,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.59538461538461,
+            "mensaje": "Precio estándar: S/. 42.60/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.465615384615376,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 40.47/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.33584615384615,
+            "mensaje": "Compra +15 cajas: -10% = S/. 38.34/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 23.63
+      },
+      {
+        "posicion": 3,
+        "producto": "LANDAX 5ML",
+        "precio_base": 45.84,
+        "precio_sugerido": 45.84,
+        "precio_minimo_negociable": 38.96,
+        "precio_maximo_negociable": 50.42,
+        "demanda_estimada_cajas": 33,
+        "demanda_estimada_piezas": 670,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 45.84,
+            "mensaje": "Precio estándar: S/. 45.84/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 17,
+            "hasta_cajas": 33,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 43.548,
+            "mensaje": "Compra 17-33 cajas: -5% = S/. 43.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 34,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 41.25600000000001,
+            "mensaje": "Compra +34 cajas: -10% = S/. 41.26/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 19.27
+      }
+    ]
+  },
+  {
+    "cliente": "SERVICIOS DE FARMACIA OFTALMOLOGICA YAHUI EIRL",
+    "zona": "CALLAO",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 223474.07,
+      "volumen_historico_cajas": 4529,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 55.8,
+        "precio_sugerido": 55.8,
+        "precio_minimo_negociable": 47.43,
+        "precio_maximo_negociable": 61.38,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 293,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 55.79777777777778,
+            "mensaje": "Precio estándar: S/. 55.80/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.00788888888889,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.01/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.218,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.22/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 19,
+        "score_prioridad": 87.71
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO 3 ML",
+        "precio_base": 77.87,
+        "precio_sugerido": 77.87,
+        "precio_minimo_negociable": 66.19,
+        "precio_maximo_negociable": 85.66,
+        "demanda_estimada_cajas": 50,
+        "demanda_estimada_piezas": 1009,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 25,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 77.86928571428571,
+            "mensaje": "Precio estándar: S/. 77.87/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 26,
+            "hasta_cajas": 50,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 73.97582142857142,
+            "mensaje": "Compra 26-50 cajas: -5% = S/. 73.98/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 51,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 70.08235714285713,
+            "mensaje": "Compra +51 cajas: -10% = S/. 70.08/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO 3 ML",
+          "producto_combo": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO 3 ML + GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 71.43
+      },
+      {
+        "posicion": 3,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 43.3,
+        "precio_sugerido": 43.3,
+        "precio_minimo_negociable": 36.81,
+        "precio_maximo_negociable": 47.63,
+        "demanda_estimada_cajas": 34,
+        "demanda_estimada_piezas": 693,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 17,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 43.3025,
+            "mensaje": "Precio estándar: S/. 43.30/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 18,
+            "hasta_cajas": 34,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 41.137375,
+            "mensaje": "Compra 18-34 cajas: -5% = S/. 41.14/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 35,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.97225,
+            "mensaje": "Compra +35 cajas: -10% = S/. 38.97/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 30.19
+      }
+    ]
+  },
+  {
+    "cliente": "CLINICA INTERNACIONAL S A",
+    "zona": "CALLAO",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 138873.49,
+      "volumen_historico_cajas": 4365,
+      "productos_en_portafolio": 8,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 5,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "TRAZIDEX OFTENO 5 ML.",
+        "precio_base": 44.4,
+        "precio_sugerido": 44.4,
+        "precio_minimo_negociable": 37.74,
+        "precio_maximo_negociable": 48.84,
+        "demanda_estimada_cajas": 33,
+        "demanda_estimada_piezas": 666,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 44.40119999999999,
+            "mensaje": "Precio estándar: S/. 44.40/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 17,
+            "hasta_cajas": 33,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.181139999999985,
+            "mensaje": "Compra 17-33 cajas: -5% = S/. 42.18/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 34,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 39.96107999999999,
+            "mensaje": "Compra +34 cajas: -10% = S/. 39.96/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "TRAZIDEX OFTENO 5 ML.",
+          "producto_combo": "TRAZIDEX UNGENA 3.5 G",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra TRAZIDEX OFTENO 5 ML. + TRAZIDEX UNGENA 3.5 G con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 24,
+        "score_prioridad": 123.33
+      },
+      {
+        "posicion": 2,
+        "producto": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+        "precio_base": 51.84,
+        "precio_sugerido": 51.84,
+        "precio_minimo_negociable": 44.07,
+        "precio_maximo_negociable": 57.03,
+        "demanda_estimada_cajas": 49,
+        "demanda_estimada_piezas": 982,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 24,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 51.84177215189872,
+            "mensaje": "Precio estándar: S/. 51.84/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 25,
+            "hasta_cajas": 49,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 49.24968354430378,
+            "mensaje": "Compra 25-49 cajas: -5% = S/. 49.25/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 50,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 46.65759493670885,
+            "mensaje": "Compra +50 cajas: -10% = S/. 46.66/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "producto_combo": "LAGRICEL OFTENO 0.5 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML + LAGRICEL OFTENO 0.5 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 15,
+        "score_prioridad": 122.93
+      },
+      {
+        "posicion": 3,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 55.8,
+        "precio_sugerido": 55.8,
+        "precio_minimo_negociable": 47.43,
+        "precio_maximo_negociable": 61.38,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 293,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 55.79777777777778,
+            "mensaje": "Precio estándar: S/. 55.80/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.00788888888889,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.01/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.218,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.22/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 8,
+        "score_prioridad": 43.71
+      },
+      {
+        "posicion": 4,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.34,
+        "precio_sugerido": 49.34,
+        "precio_minimo_negociable": 41.94,
+        "precio_maximo_negociable": 54.28,
+        "demanda_estimada_cajas": 19,
+        "demanda_estimada_piezas": 396,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 49.34181818181818,
+            "mensaje": "Precio estándar: S/. 49.34/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 10,
+            "hasta_cajas": 19,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.87472727272726,
+            "mensaje": "Compra 10-19 cajas: -5% = S/. 46.87/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 20,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.40763636363636,
+            "mensaje": "Compra +20 cajas: -10% = S/. 44.41/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 18.33
+      },
+      {
+        "posicion": 5,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 56.53,
+        "precio_sugerido": 56.53,
+        "precio_minimo_negociable": 48.05,
+        "precio_maximo_negociable": 62.19,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 291,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 56.53476190476191,
+            "mensaje": "Precio estándar: S/. 56.53/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.70802380952381,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.71/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.88128571428572,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.88/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 13.31
+      }
+    ]
+  },
+  {
+    "cliente": "ADMINISTRADORA CLINICA RICARDO PALMA S.A.",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 132751.01,
+      "volumen_historico_cajas": 4900,
+      "productos_en_portafolio": 6,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 7,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "TRAZIDEX OFTENO 5 ML.",
+        "precio_base": 44.34,
+        "precio_sugerido": 44.34,
+        "precio_minimo_negociable": 37.69,
+        "precio_maximo_negociable": 48.77,
+        "demanda_estimada_cajas": 61,
+        "demanda_estimada_piezas": 1238,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 30,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 44.33988095238095,
+            "mensaje": "Precio estándar: S/. 44.34/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 31,
+            "hasta_cajas": 61,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.122886904761906,
+            "mensaje": "Compra 31-61 cajas: -5% = S/. 42.12/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 62,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 39.90589285714286,
+            "mensaje": "Compra +62 cajas: -10% = S/. 39.91/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "TRAZIDEX OFTENO 5 ML.",
+          "producto_combo": "TRAZIDEX UNGENA 3.5 G",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra TRAZIDEX OFTENO 5 ML. + TRAZIDEX UNGENA 3.5 G con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 21,
+        "score_prioridad": 141.66
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO 3 ML",
+        "precio_base": 82.69,
+        "precio_sugerido": 82.69,
+        "precio_minimo_negociable": 70.29,
+        "precio_maximo_negociable": 90.96,
+        "demanda_estimada_cajas": 22,
+        "demanda_estimada_piezas": 448,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 82.68926829268293,
+            "mensaje": "Precio estándar: S/. 82.69/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 12,
+            "hasta_cajas": 22,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 78.55480487804877,
+            "mensaje": "Compra 12-22 cajas: -5% = S/. 78.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 23,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 74.42034146341463,
+            "mensaje": "Compra +23 cajas: -10% = S/. 74.42/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 18,
+        "score_prioridad": 96.66
+      },
+      {
+        "posicion": 3,
+        "producto": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+        "precio_base": 53.54,
+        "precio_sugerido": 53.54,
+        "precio_minimo_negociable": 45.51,
+        "precio_maximo_negociable": 58.9,
+        "demanda_estimada_cajas": 37,
+        "demanda_estimada_piezas": 749,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 18,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.541919191919206,
+            "mensaje": "Precio estándar: S/. 53.54/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 19,
+            "hasta_cajas": 37,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.864823232323246,
+            "mensaje": "Compra 19-37 cajas: -5% = S/. 50.86/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 38,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.18772727272729,
+            "mensaje": "Compra +38 cajas: -10% = S/. 48.19/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "producto_combo": "LAGRICEL OFTENO 0.5 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML + LAGRICEL OFTENO 0.5 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 80.53
+      },
+      {
+        "posicion": 4,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 78.01,
+        "precio_sugerido": 78.01,
+        "precio_minimo_negociable": 66.31,
+        "precio_maximo_negociable": 85.82,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 279,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 78.0140789473684,
+            "mensaje": "Precio estándar: S/. 78.01/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 74.11337499999998,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 74.11/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 70.21267105263156,
+            "mensaje": "Compra +14 cajas: -10% = S/. 70.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 11,
+        "score_prioridad": 65.3
+      },
+      {
+        "posicion": 5,
+        "producto": "ELIPTIC OFTENO 5ML PF PERU",
+        "precio_base": 38.98,
+        "precio_sugerido": 38.98,
+        "precio_minimo_negociable": 33.13,
+        "precio_maximo_negociable": 42.87,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 273,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 38.975890410958904,
+            "mensaje": "Precio estándar: S/. 38.98/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 37.027095890410955,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 37.03/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 35.07830136986301,
+            "mensaje": "Compra +14 cajas: -10% = S/. 35.08/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML PF PERU",
+          "producto_combo": "ELIPTIC OFTENO 5ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML PF PERU + ELIPTIC OFTENO 5ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 8,
+        "score_prioridad": 45.47
+      },
+      {
+        "posicion": 6,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 52.08,
+        "precio_sugerido": 52.08,
+        "precio_minimo_negociable": 44.27,
+        "precio_maximo_negociable": 57.28,
+        "demanda_estimada_cajas": 15,
+        "demanda_estimada_piezas": 311,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 52.07671232876711,
+            "mensaje": "Precio estándar: S/. 52.08/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 15,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 49.47287671232875,
+            "mensaje": "Compra 8-15 cajas: -5% = S/. 49.47/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 16,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 46.869041095890395,
+            "mensaje": "Compra +16 cajas: -10% = S/. 46.87/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 34.23
+      },
+      {
+        "posicion": 7,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.0,
+        "precio_sugerido": 49.0,
+        "precio_minimo_negociable": 41.65,
+        "precio_maximo_negociable": 53.9,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 320,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 48.99864864864864,
+            "mensaje": "Precio estándar: S/. 49.00/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.54871621621621,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 46.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.09878378378378,
+            "mensaje": "Compra +17 cajas: -10% = S/. 44.10/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 2,
+        "score_prioridad": 20.21
+      }
+    ]
+  },
+  {
+    "cliente": "OPTICASUNO S.A.C.",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 127146.58,
+      "volumen_historico_cajas": 3053,
+      "productos_en_portafolio": 10,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+        "precio_base": 53.54,
+        "precio_sugerido": 53.54,
+        "precio_minimo_negociable": 45.51,
+        "precio_maximo_negociable": 58.9,
+        "demanda_estimada_cajas": 37,
+        "demanda_estimada_piezas": 749,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 18,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.541919191919206,
+            "mensaje": "Precio estándar: S/. 53.54/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 19,
+            "hasta_cajas": 37,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.864823232323246,
+            "mensaje": "Compra 19-37 cajas: -5% = S/. 50.86/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 38,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.18772727272729,
+            "mensaje": "Compra +38 cajas: -10% = S/. 48.19/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "producto_combo": "LAGRICEL OFTENO 0.5 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML + LAGRICEL OFTENO 0.5 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 16,
+        "score_prioridad": 116.53
+      },
+      {
+        "posicion": 2,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.0,
+        "precio_sugerido": 49.0,
+        "precio_minimo_negociable": 41.65,
+        "precio_maximo_negociable": 53.9,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 320,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 48.99864864864864,
+            "mensaje": "Precio estándar: S/. 49.00/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.54871621621621,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 46.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.09878378378378,
+            "mensaje": "Compra +17 cajas: -10% = S/. 44.10/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 6,
+        "score_prioridad": 36.21
+      },
+      {
+        "posicion": 3,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.56,
+        "precio_sugerido": 53.56,
+        "precio_minimo_negociable": 45.53,
+        "precio_maximo_negociable": 58.92,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 240,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.563125,
+            "mensaje": "Precio estándar: S/. 53.56/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.88496875,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.2068125,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 18.8
+      }
+    ]
+  },
+  {
+    "cliente": "SISTEMAS DE ADMINISTRACION HOSPITALARIA S.A.C.",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 120954.66,
+      "volumen_historico_cajas": 3698,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 52.08,
+        "precio_sugerido": 52.08,
+        "precio_minimo_negociable": 44.27,
+        "precio_maximo_negociable": 57.28,
+        "demanda_estimada_cajas": 15,
+        "demanda_estimada_piezas": 311,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 52.07671232876711,
+            "mensaje": "Precio estándar: S/. 52.08/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 15,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 49.47287671232875,
+            "mensaje": "Compra 8-15 cajas: -5% = S/. 49.47/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 16,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 46.869041095890395,
+            "mensaje": "Compra +16 cajas: -10% = S/. 46.87/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 15,
+        "score_prioridad": 78.23
+      },
+      {
+        "posicion": 2,
+        "producto": "LANDAX 5ML",
+        "precio_base": 42.16,
+        "precio_sugerido": 42.16,
+        "precio_minimo_negociable": 35.83,
+        "precio_maximo_negociable": 46.37,
+        "demanda_estimada_cajas": 40,
+        "demanda_estimada_piezas": 810,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 20,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.15870967741936,
+            "mensaje": "Precio estándar: S/. 42.16/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 21,
+            "hasta_cajas": 40,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.05077419354839,
+            "mensaje": "Compra 21-40 cajas: -5% = S/. 40.05/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 41,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.942838709677424,
+            "mensaje": "Compra +41 cajas: -10% = S/. 37.94/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 36.49
+      },
+      {
+        "posicion": 3,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.56,
+        "precio_sugerido": 53.56,
+        "precio_minimo_negociable": 45.53,
+        "precio_maximo_negociable": 58.92,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 240,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.563125,
+            "mensaje": "Precio estándar: S/. 53.56/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.88496875,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.2068125,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 34.8
+      }
+    ]
+  },
+  {
+    "cliente": "CLINICA DE OJOS D�OPELUCE SAC",
+    "zona": "NORTE CHICO",
+    "region": "NORTE",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 101412.42,
+      "volumen_historico_cajas": 1998,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 75.19,
+        "precio_sugerido": 75.19,
+        "precio_minimo_negociable": 63.91,
+        "precio_maximo_negociable": 82.71,
+        "demanda_estimada_cajas": 19,
+        "demanda_estimada_piezas": 394,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 75.19170731707315,
+            "mensaje": "Precio estándar: S/. 75.19/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 10,
+            "hasta_cajas": 19,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 71.43212195121949,
+            "mensaje": "Compra 10-19 cajas: -5% = S/. 71.43/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 20,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 67.67253658536583,
+            "mensaje": "Compra +20 cajas: -10% = S/. 67.67/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 19,
+        "score_prioridad": 96.37
+      },
+      {
+        "posicion": 2,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 42.67,
+        "precio_sugerido": 42.67,
+        "precio_minimo_negociable": 36.27,
+        "precio_maximo_negociable": 46.94,
+        "demanda_estimada_cajas": 10,
+        "demanda_estimada_piezas": 217,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.67000000000001,
+            "mensaje": "Precio estándar: S/. 42.67/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.536500000000004,
+            "mensaje": "Compra 6-10 cajas: -5% = S/. 40.54/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 11,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.403000000000006,
+            "mensaje": "Compra +11 cajas: -10% = S/. 38.40/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 8,
+        "score_prioridad": 36.9
+      },
+      {
+        "posicion": 3,
+        "producto": "LANDAX 5ML",
+        "precio_base": 44.89,
+        "precio_sugerido": 44.89,
+        "precio_minimo_negociable": 38.16,
+        "precio_maximo_negociable": 49.38,
+        "demanda_estimada_cajas": 11,
+        "demanda_estimada_piezas": 229,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 44.89157894736842,
+            "mensaje": "Precio estándar: S/. 44.89/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.647,
+            "mensaje": "Compra 6-11 cajas: -5% = S/. 42.65/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 12,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 40.40242105263158,
+            "mensaje": "Compra +12 cajas: -10% = S/. 40.40/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 18.55
+      }
+    ]
+  },
+  {
+    "cliente": "ASOC. PASTORAL DE SERVICIOS MEDICO ASISTENCIALES GOOD HOPE DE LA IGLESIA ADVENTISTA DEL SEPTIMO DIA",
+    "zona": "CALLAO",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 100492.21,
+      "volumen_historico_cajas": 2045,
+      "productos_en_portafolio": 9,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 5,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "LAGRICEL OFTENO 0.5 ML",
+        "precio_base": 47.79,
+        "precio_sugerido": 47.79,
+        "precio_minimo_negociable": 40.62,
+        "precio_maximo_negociable": 52.57,
+        "demanda_estimada_cajas": 89,
+        "demanda_estimada_piezas": 1787,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 44,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 47.791538461538465,
+            "mensaje": "Precio estándar: S/. 47.79/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 45,
+            "hasta_cajas": 89,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 45.40196153846154,
+            "mensaje": "Compra 45-89 cajas: -5% = S/. 45.40/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 90,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 43.01238461538462,
+            "mensaje": "Compra +90 cajas: -10% = S/. 43.01/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO 0.5 ML",
+          "producto_combo": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO 0.5 ML + LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 18,
+        "score_prioridad": 128.42
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 78.75,
+        "precio_sugerido": 78.75,
+        "precio_minimo_negociable": 66.94,
+        "precio_maximo_negociable": 86.62,
+        "demanda_estimada_cajas": 26,
+        "demanda_estimada_piezas": 527,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 78.7473469387755,
+            "mensaje": "Precio estándar: S/. 78.75/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 14,
+            "hasta_cajas": 26,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 74.80997959183672,
+            "mensaje": "Compra 14-26 cajas: -5% = S/. 74.81/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 27,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 70.87261224489795,
+            "mensaje": "Compra +27 cajas: -10% = S/. 70.87/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 6,
+        "score_prioridad": 55.58
+      },
+      {
+        "posicion": 3,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 55.8,
+        "precio_sugerido": 55.8,
+        "precio_minimo_negociable": 47.43,
+        "precio_maximo_negociable": 61.38,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 293,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 55.79777777777778,
+            "mensaje": "Precio estándar: S/. 55.80/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.00788888888889,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.01/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.218,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.22/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 5,
+        "score_prioridad": 31.71
+      },
+      {
+        "posicion": 4,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.34,
+        "precio_sugerido": 49.34,
+        "precio_minimo_negociable": 41.94,
+        "precio_maximo_negociable": 54.28,
+        "demanda_estimada_cajas": 19,
+        "demanda_estimada_piezas": 396,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 49.34181818181818,
+            "mensaje": "Precio estándar: S/. 49.34/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 10,
+            "hasta_cajas": 19,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.87472727272726,
+            "mensaje": "Compra 10-19 cajas: -5% = S/. 46.87/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 20,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.40763636363636,
+            "mensaje": "Compra +20 cajas: -10% = S/. 44.41/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 26.33
+      },
+      {
+        "posicion": 5,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 56.53,
+        "precio_sugerido": 56.53,
+        "precio_minimo_negociable": 48.05,
+        "precio_maximo_negociable": 62.19,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 291,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 56.53476190476191,
+            "mensaje": "Precio estándar: S/. 56.53/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 53.70802380952381,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 53.71/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 50.88128571428572,
+            "mensaje": "Compra +15 cajas: -10% = S/. 50.88/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 25.31
+      }
+    ]
+  },
+  {
+    "cliente": "OFTALMOVISION S.A.C.",
+    "zona": "TRUJILLO",
+    "region": "NORTE",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 95426.3,
+      "volumen_historico_cajas": 1900,
+      "productos_en_portafolio": 11,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 5,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "SOPHIPREN OFTENO 5 ML",
+        "precio_base": 42.22,
+        "precio_sugerido": 42.22,
+        "precio_minimo_negociable": 35.89,
+        "precio_maximo_negociable": 46.44,
+        "demanda_estimada_cajas": 11,
+        "demanda_estimada_piezas": 238,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.21793103448276,
+            "mensaje": "Precio estándar: S/. 42.22/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.10703448275862,
+            "mensaje": "Compra 6-11 cajas: -5% = S/. 40.11/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 12,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.99613793103448,
+            "mensaje": "Compra +12 cajas: -10% = S/. 38.00/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 13,
+        "score_prioridad": 59.97
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 85.81,
+        "precio_sugerido": 85.81,
+        "precio_minimo_negociable": 72.94,
+        "precio_maximo_negociable": 94.39,
+        "demanda_estimada_cajas": 10,
+        "demanda_estimada_piezas": 207,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 85.81117647058826,
+            "mensaje": "Precio estándar: S/. 85.81/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 81.52061764705884,
+            "mensaje": "Compra 6-10 cajas: -5% = S/. 81.52/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 11,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 77.23005882352945,
+            "mensaje": "Compra +11 cajas: -10% = S/. 77.23/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 13,
+        "score_prioridad": 59.01
+      },
+      {
+        "posicion": 3,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 47.2,
+        "precio_sugerido": 47.2,
+        "precio_minimo_negociable": 40.12,
+        "precio_maximo_negociable": 51.92,
+        "demanda_estimada_cajas": 7,
+        "demanda_estimada_piezas": 143,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 3,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 47.199999999999996,
+            "mensaje": "Precio estándar: S/. 47.20/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 4,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 44.839999999999996,
+            "mensaje": "Compra 4-7 cajas: -5% = S/. 44.84/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 8,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 42.48,
+            "mensaje": "Compra +8 cajas: -10% = S/. 42.48/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 8,
+        "score_prioridad": 35.26
+      },
+      {
+        "posicion": 4,
+        "producto": "LANDAX 5ML",
+        "precio_base": 46.57,
+        "precio_sugerido": 46.57,
+        "precio_minimo_negociable": 39.59,
+        "precio_maximo_negociable": 51.23,
+        "demanda_estimada_cajas": 8,
+        "demanda_estimada_piezas": 165,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 46.572500000000005,
+            "mensaje": "Precio estándar: S/. 46.57/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 44.243875,
+            "mensaje": "Compra 5-8 cajas: -5% = S/. 44.24/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 9,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 41.91525000000001,
+            "mensaje": "Compra +9 cajas: -10% = S/. 41.92/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 15.59
+      },
+      {
+        "posicion": 5,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 26.92,
+        "precio_sugerido": 26.92,
+        "precio_minimo_negociable": 22.88,
+        "precio_maximo_negociable": 29.62,
+        "demanda_estimada_cajas": 20,
+        "demanda_estimada_piezas": 416,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 26.923333333333332,
+            "mensaje": "Precio estándar: S/. 26.92/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 11,
+            "hasta_cajas": 20,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 25.577166666666663,
+            "mensaje": "Compra 11-20 cajas: -5% = S/. 25.58/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 21,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 24.230999999999998,
+            "mensaje": "Compra +21 cajas: -10% = S/. 24.23/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 13.0
+      }
+    ]
+  },
+  {
+    "cliente": "INSTITUTOS OFTALMOLOGICOS ESPECIALIZADOS DR.CARLOS WONG CAM S.A.C",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 92032.95,
+      "volumen_historico_cajas": 1708,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELIPTIC OFTENO 5ML PF PERU",
+        "precio_base": 38.98,
+        "precio_sugerido": 38.98,
+        "precio_minimo_negociable": 33.13,
+        "precio_maximo_negociable": 42.87,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 273,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 38.975890410958904,
+            "mensaje": "Precio estándar: S/. 38.98/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 37.027095890410955,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 37.03/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 35.07830136986301,
+            "mensaje": "Compra +14 cajas: -10% = S/. 35.08/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML PF PERU",
+          "producto_combo": "ELIPTIC OFTENO 5ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML PF PERU + ELIPTIC OFTENO 5ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 28,
+        "score_prioridad": 125.47
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 78.01,
+        "precio_sugerido": 78.01,
+        "precio_minimo_negociable": 66.31,
+        "precio_maximo_negociable": 85.82,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 279,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 78.0140789473684,
+            "mensaje": "Precio estándar: S/. 78.01/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 74.11337499999998,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 74.11/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 70.21267105263156,
+            "mensaje": "Compra +14 cajas: -10% = S/. 70.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 15,
+        "score_prioridad": 81.3
+      },
+      {
+        "posicion": 3,
+        "producto": "LANDAX 5ML",
+        "precio_base": 42.16,
+        "precio_sugerido": 42.16,
+        "precio_minimo_negociable": 35.83,
+        "precio_maximo_negociable": 46.37,
+        "demanda_estimada_cajas": 40,
+        "demanda_estimada_piezas": 810,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 20,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.15870967741936,
+            "mensaje": "Precio estándar: S/. 42.16/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 21,
+            "hasta_cajas": 40,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.05077419354839,
+            "mensaje": "Compra 21-40 cajas: -5% = S/. 40.05/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 41,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.942838709677424,
+            "mensaje": "Compra +41 cajas: -10% = S/. 37.94/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 5,
+        "score_prioridad": 44.49
+      }
+    ]
+  },
+  {
+    "cliente": "SOUTHERN PERU COPPER CORPORATION, SUCURSAL DEL PER�",
+    "zona": "CADENAS",
+    "region": "NACIONAL",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 91981.57,
+      "volumen_historico_cajas": 1945,
+      "productos_en_portafolio": 6,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 7,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+        "precio_base": 54.63,
+        "precio_sugerido": 54.63,
+        "precio_minimo_negociable": 46.43,
+        "precio_maximo_negociable": 60.09,
+        "demanda_estimada_cajas": 32,
+        "demanda_estimada_piezas": 644,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 54.627241379310355,
+            "mensaje": "Precio estándar: S/. 54.63/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 17,
+            "hasta_cajas": 32,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 51.89587931034484,
+            "mensaje": "Compra 17-32 cajas: -5% = S/. 51.90/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 33,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 49.16451724137932,
+            "mensaje": "Compra +33 cajas: -10% = S/. 49.16/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "producto_combo": "LAGRICEL OFTENO 0.5 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML + LAGRICEL OFTENO 0.5 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 63.48
+      },
+      {
+        "posicion": 2,
+        "producto": "AGGLAD OFTENO 5 ML",
+        "precio_base": 55.49,
+        "precio_sugerido": 55.49,
+        "precio_minimo_negociable": 47.17,
+        "precio_maximo_negociable": 61.04,
+        "demanda_estimada_cajas": 15,
+        "demanda_estimada_piezas": 315,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 55.492682926829275,
+            "mensaje": "Precio estándar: S/. 55.49/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 15,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 52.718048780487806,
+            "mensaje": "Compra 8-15 cajas: -5% = S/. 52.72/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 16,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 49.94341463414635,
+            "mensaje": "Compra +16 cajas: -10% = S/. 49.94/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 9,
+        "score_prioridad": 49.53
+      },
+      {
+        "posicion": 3,
+        "producto": "SOPHIPREN OFTENO 5 ML",
+        "precio_base": 41.67,
+        "precio_sugerido": 41.67,
+        "precio_minimo_negociable": 35.42,
+        "precio_maximo_negociable": 45.84,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 333,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 41.67000000000001,
+            "mensaje": "Precio estándar: S/. 41.67/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 39.58650000000001,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 39.59/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.50300000000001,
+            "mensaje": "Compra +17 cajas: -10% = S/. 37.50/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 6,
+        "score_prioridad": 33.85
+      },
+      {
+        "posicion": 4,
+        "producto": "TRAZIDEX OFTENO 5 ML.",
+        "precio_base": 41.86,
+        "precio_sugerido": 41.86,
+        "precio_minimo_negociable": 35.59,
+        "precio_maximo_negociable": 46.05,
+        "demanda_estimada_cajas": 21,
+        "demanda_estimada_piezas": 424,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 41.864814814814814,
+            "mensaje": "Precio estándar: S/. 41.86/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 11,
+            "hasta_cajas": 21,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 39.771574074074074,
+            "mensaje": "Compra 11-21 cajas: -5% = S/. 39.77/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 22,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.678333333333335,
+            "mensaje": "Compra +22 cajas: -10% = S/. 37.68/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "TRAZIDEX OFTENO 5 ML.",
+          "producto_combo": "TRAZIDEX UNGENA 3.5 G",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra TRAZIDEX OFTENO 5 ML. + TRAZIDEX UNGENA 3.5 G con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 29.21
+      },
+      {
+        "posicion": 5,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.07,
+        "precio_sugerido": 49.07,
+        "precio_minimo_negociable": 41.71,
+        "precio_maximo_negociable": 53.98,
+        "demanda_estimada_cajas": 17,
+        "demanda_estimada_piezas": 355,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 49.07000000000001,
+            "mensaje": "Precio estándar: S/. 49.07/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 17,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.6165,
+            "mensaje": "Compra 9-17 cajas: -5% = S/. 46.62/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 18,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.16300000000001,
+            "mensaje": "Compra +18 cajas: -10% = S/. 44.16/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 24.68
+      },
+      {
+        "posicion": 6,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 45.09,
+        "precio_sugerido": 45.09,
+        "precio_minimo_negociable": 38.33,
+        "precio_maximo_negociable": 49.6,
+        "demanda_estimada_cajas": 9,
+        "demanda_estimada_piezas": 194,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 45.09428571428571,
+            "mensaje": "Precio estándar: S/. 45.09/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.839571428571425,
+            "mensaje": "Compra 5-9 cajas: -5% = S/. 42.84/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 10,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 40.58485714285714,
+            "mensaje": "Compra +10 cajas: -10% = S/. 40.58/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 8.5
+      },
+      {
+        "posicion": 7,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 65.22,
+        "precio_sugerido": 65.22,
+        "precio_minimo_negociable": 55.44,
+        "precio_maximo_negociable": 71.75,
+        "demanda_estimada_cajas": 7,
+        "demanda_estimada_piezas": 146,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 3,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 65.22333333333334,
+            "mensaje": "Precio estándar: S/. 65.22/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 4,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 61.962166666666675,
+            "mensaje": "Compra 4-7 cajas: -5% = S/. 61.96/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 8,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 58.70100000000001,
+            "mensaje": "Compra +8 cajas: -10% = S/. 58.70/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 7.53
+      }
+    ]
+  },
+  {
+    "cliente": "ASOCIACION PERUANO JAPONESA",
+    "zona": "NORTE CHICO",
+    "region": "NORTE",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 89477.67,
+      "volumen_historico_cajas": 1494,
+      "productos_en_portafolio": 12,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 4,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 48.29,
+        "precio_sugerido": 48.29,
+        "precio_minimo_negociable": 41.04,
+        "precio_maximo_negociable": 53.12,
+        "demanda_estimada_cajas": 17,
+        "demanda_estimada_piezas": 341,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 48.28677419354839,
+            "mensaje": "Precio estándar: S/. 48.29/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 17,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 45.872435483870966,
+            "mensaje": "Compra 9-17 cajas: -5% = S/. 45.87/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 18,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 43.45809677419355,
+            "mensaje": "Compra +18 cajas: -10% = S/. 43.46/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 57.01
+      },
+      {
+        "posicion": 2,
+        "producto": "GAAP OFTENO 3 ML",
+        "precio_base": 73.5,
+        "precio_sugerido": 73.5,
+        "precio_minimo_negociable": 62.48,
+        "precio_maximo_negociable": 80.85,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 275,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 73.50444444444445,
+            "mensaje": "Precio estándar: S/. 73.50/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 69.82922222222221,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 69.83/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 66.154,
+            "mensaje": "Compra +14 cajas: -10% = S/. 66.15/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO 3 ML",
+          "producto_combo": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO 3 ML + GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 25.1
+      },
+      {
+        "posicion": 3,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 41.48,
+        "precio_sugerido": 41.48,
+        "precio_minimo_negociable": 35.25,
+        "precio_maximo_negociable": 45.62,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 328,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 41.475,
+            "mensaje": "Precio estándar: S/. 41.48/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 39.40125,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 39.40/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.3275,
+            "mensaje": "Compra +17 cajas: -10% = S/. 37.33/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 24.97
+      },
+      {
+        "posicion": 4,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 42.67,
+        "precio_sugerido": 42.67,
+        "precio_minimo_negociable": 36.27,
+        "precio_maximo_negociable": 46.94,
+        "demanda_estimada_cajas": 10,
+        "demanda_estimada_piezas": 217,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.67000000000001,
+            "mensaje": "Precio estándar: S/. 42.67/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.536500000000004,
+            "mensaje": "Compra 6-10 cajas: -5% = S/. 40.54/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 11,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.403000000000006,
+            "mensaje": "Compra +11 cajas: -10% = S/. 38.40/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 2,
+        "score_prioridad": 12.9
+      }
+    ]
+  },
+  {
+    "cliente": "CENTRO DE CATARATA Y LASER E.I.R.L.",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 77435.25,
+      "volumen_historico_cajas": 1720,
+      "productos_en_portafolio": 11,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 5,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELIPTIC OFTENO 5ML PF PERU",
+        "precio_base": 38.98,
+        "precio_sugerido": 38.98,
+        "precio_minimo_negociable": 33.13,
+        "precio_maximo_negociable": 42.87,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 273,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 38.975890410958904,
+            "mensaje": "Precio estándar: S/. 38.98/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 37.027095890410955,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 37.03/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 35.07830136986301,
+            "mensaje": "Compra +14 cajas: -10% = S/. 35.08/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML PF PERU",
+          "producto_combo": "ELIPTIC OFTENO 5ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML PF PERU + ELIPTIC OFTENO 5ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 12,
+        "score_prioridad": 61.47
+      },
+      {
+        "posicion": 2,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.0,
+        "precio_sugerido": 49.0,
+        "precio_minimo_negociable": 41.65,
+        "precio_maximo_negociable": 53.9,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 320,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 48.99864864864864,
+            "mensaje": "Precio estándar: S/. 49.00/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.54871621621621,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 46.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.09878378378378,
+            "mensaje": "Compra +17 cajas: -10% = S/. 44.10/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 52.21
+      },
+      {
+        "posicion": 3,
+        "producto": "LANDAX 5ML",
+        "precio_base": 42.16,
+        "precio_sugerido": 42.16,
+        "precio_minimo_negociable": 35.83,
+        "precio_maximo_negociable": 46.37,
+        "demanda_estimada_cajas": 40,
+        "demanda_estimada_piezas": 810,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 20,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.15870967741936,
+            "mensaje": "Precio estándar: S/. 42.16/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 21,
+            "hasta_cajas": 40,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.05077419354839,
+            "mensaje": "Compra 21-40 cajas: -5% = S/. 40.05/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 41,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.942838709677424,
+            "mensaje": "Compra +41 cajas: -10% = S/. 37.94/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 3,
+        "score_prioridad": 36.49
+      },
+      {
+        "posicion": 4,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.56,
+        "precio_sugerido": 53.56,
+        "precio_minimo_negociable": 45.53,
+        "precio_maximo_negociable": 58.92,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 240,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.563125,
+            "mensaje": "Precio estándar: S/. 53.56/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.88496875,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.2068125,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 6,
+        "score_prioridad": 30.8
+      },
+      {
+        "posicion": 5,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 78.01,
+        "precio_sugerido": 78.01,
+        "precio_minimo_negociable": 66.31,
+        "precio_maximo_negociable": 85.82,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 279,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 78.0140789473684,
+            "mensaje": "Precio estándar: S/. 78.01/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 74.11337499999998,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 74.11/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 70.21267105263156,
+            "mensaje": "Compra +14 cajas: -10% = S/. 70.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 2,
+        "score_prioridad": 29.3
+      }
+    ]
+  },
+  {
+    "cliente": "OJOS LASER OPHTHALMIC S.A.C",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 75014.1,
+      "volumen_historico_cajas": 3000,
+      "productos_en_portafolio": 1,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 2,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "TRAZIDEX UNGENA 3.5 G",
+        "precio_base": 42.84,
+        "precio_sugerido": 42.84,
+        "precio_minimo_negociable": 36.42,
+        "precio_maximo_negociable": 47.13,
+        "demanda_estimada_cajas": 31,
+        "demanda_estimada_piezas": 625,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 15,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.841520000000024,
+            "mensaje": "Precio estándar: S/. 42.84/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 16,
+            "hasta_cajas": 31,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.69944400000002,
+            "mensaje": "Compra 16-31 cajas: -5% = S/. 40.70/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 32,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.557368000000025,
+            "mensaje": "Compra +32 cajas: -10% = S/. 38.56/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "TRAZIDEX UNGENA 3.5 G",
+          "producto_combo": "TRAZIDEX OFTENO 5 ML.",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra TRAZIDEX UNGENA 3.5 G + TRAZIDEX OFTENO 5 ML. con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 69.32
+      },
+      {
+        "posicion": 2,
+        "producto": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+        "precio_base": 53.54,
+        "precio_sugerido": 53.54,
+        "precio_minimo_negociable": 45.51,
+        "precio_maximo_negociable": 58.9,
+        "demanda_estimada_cajas": 37,
+        "demanda_estimada_piezas": 749,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 18,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.541919191919206,
+            "mensaje": "Precio estándar: S/. 53.54/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 19,
+            "hasta_cajas": 37,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.864823232323246,
+            "mensaje": "Compra 19-37 cajas: -5% = S/. 50.86/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 38,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.18772727272729,
+            "mensaje": "Compra +38 cajas: -10% = S/. 48.19/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 68.53
+      }
+    ]
+  },
+  {
+    "cliente": "CLINICA OFTALMOLOGICA VIDAVA�S",
+    "zona": "CHICLAYO",
+    "region": "NORTE",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 60140.76,
+      "volumen_historico_cajas": 900,
+      "productos_en_portafolio": 10,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 6,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "LAGRICEL OFTENO 0.5 ML",
+        "precio_base": 38.41,
+        "precio_sugerido": 38.41,
+        "precio_minimo_negociable": 32.65,
+        "precio_maximo_negociable": 42.25,
+        "demanda_estimada_cajas": 9,
+        "demanda_estimada_piezas": 188,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 38.407,
+            "mensaje": "Precio estándar: S/. 38.41/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 36.48665,
+            "mensaje": "Compra 5-9 cajas: -5% = S/. 36.49/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 10,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 34.5663,
+            "mensaje": "Compra +10 cajas: -10% = S/. 34.57/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO 0.5 ML",
+          "producto_combo": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO 0.5 ML + LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 17,
+        "score_prioridad": 75.03
+      },
+      {
+        "posicion": 2,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 48.64,
+        "precio_sugerido": 48.64,
+        "precio_minimo_negociable": 41.35,
+        "precio_maximo_negociable": 53.51,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 320,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 48.64166666666666,
+            "mensaje": "Precio estándar: S/. 48.64/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.20958333333332,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 46.21/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 43.777499999999996,
+            "mensaje": "Compra +17 cajas: -10% = S/. 43.78/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 47.28
+      },
+      {
+        "posicion": 3,
+        "producto": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+        "precio_base": 54.74,
+        "precio_sugerido": 54.74,
+        "precio_minimo_negociable": 46.53,
+        "precio_maximo_negociable": 60.22,
+        "demanda_estimada_cajas": 8,
+        "demanda_estimada_piezas": 171,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 54.744375,
+            "mensaje": "Precio estándar: S/. 54.74/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 52.007156249999994,
+            "mensaje": "Compra 5-8 cajas: -5% = S/. 52.01/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 9,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 49.2699375,
+            "mensaje": "Compra +9 cajas: -10% = S/. 49.27/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "producto_combo": "GAAP OFTENO 3 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU + GAAP OFTENO 3 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 47.13
+      },
+      {
+        "posicion": 4,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 51.76,
+        "precio_sugerido": 51.76,
+        "precio_minimo_negociable": 44.0,
+        "precio_maximo_negociable": 56.94,
+        "demanda_estimada_cajas": 14,
+        "demanda_estimada_piezas": 280,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 51.76333333333333,
+            "mensaje": "Precio estándar: S/. 51.76/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 14,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 49.17516666666666,
+            "mensaje": "Compra 8-14 cajas: -5% = S/. 49.18/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 15,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 46.586999999999996,
+            "mensaje": "Compra +15 cajas: -10% = S/. 46.59/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 8,
+        "score_prioridad": 38.47
+      },
+      {
+        "posicion": 5,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 32.81,
+        "precio_sugerido": 32.81,
+        "precio_minimo_negociable": 27.89,
+        "precio_maximo_negociable": 36.09,
+        "demanda_estimada_cajas": 9,
+        "demanda_estimada_piezas": 185,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 32.8125,
+            "mensaje": "Precio estándar: S/. 32.81/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 31.171875,
+            "mensaje": "Compra 5-9 cajas: -5% = S/. 31.17/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 10,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 29.53125,
+            "mensaje": "Compra +10 cajas: -10% = S/. 29.53/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 32.09
+      },
+      {
+        "posicion": 6,
+        "producto": "LANDAX 5ML",
+        "precio_base": 25.16,
+        "precio_sugerido": 25.16,
+        "precio_minimo_negociable": 21.39,
+        "precio_maximo_negociable": 27.68,
+        "demanda_estimada_cajas": 8,
+        "demanda_estimada_piezas": 164,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 25.162,
+            "mensaje": "Precio estándar: S/. 25.16/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 23.903899999999997,
+            "mensaje": "Compra 5-8 cajas: -5% = S/. 23.90/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 9,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 22.6458,
+            "mensaje": "Compra +9 cajas: -10% = S/. 22.65/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 7.8
+      }
+    ]
+  },
+  {
+    "cliente": "MACULA D & T S.R.L.",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 57131.28,
+      "volumen_historico_cajas": 1073,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.56,
+        "precio_sugerido": 53.56,
+        "precio_minimo_negociable": 45.53,
+        "precio_maximo_negociable": 58.92,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 240,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.563125,
+            "mensaje": "Precio estándar: S/. 53.56/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.88496875,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.2068125,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 11,
+        "score_prioridad": 50.8
+      },
+      {
+        "posicion": 2,
+        "producto": "LANDAX 5ML",
+        "precio_base": 42.16,
+        "precio_sugerido": 42.16,
+        "precio_minimo_negociable": 35.83,
+        "precio_maximo_negociable": 46.37,
+        "demanda_estimada_cajas": 40,
+        "demanda_estimada_piezas": 810,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 20,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.15870967741936,
+            "mensaje": "Precio estándar: S/. 42.16/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 21,
+            "hasta_cajas": 40,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.05077419354839,
+            "mensaje": "Compra 21-40 cajas: -5% = S/. 40.05/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 41,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 37.942838709677424,
+            "mensaje": "Compra +41 cajas: -10% = S/. 37.94/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 28.49
+      },
+      {
+        "posicion": 3,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 43.03,
+        "precio_sugerido": 43.03,
+        "precio_minimo_negociable": 36.57,
+        "precio_maximo_negociable": 47.33,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 324,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 43.02666666666667,
+            "mensaje": "Precio estándar: S/. 43.03/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.87533333333334,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 40.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.724000000000004,
+            "mensaje": "Compra +17 cajas: -10% = S/. 38.72/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 25.02
+      }
+    ]
+  },
+  {
+    "cliente": "ARBRAYSS LASER S.R.L",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 56730.62,
+      "volumen_historico_cajas": 1057,
+      "productos_en_portafolio": 13,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 3,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "SOPHIPREN OFTENO 5 ML",
+        "precio_base": 42.23,
+        "precio_sugerido": 42.23,
+        "precio_minimo_negociable": 35.9,
+        "precio_maximo_negociable": 46.45,
+        "demanda_estimada_cajas": 22,
+        "demanda_estimada_piezas": 452,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.23180327868852,
+            "mensaje": "Precio estándar: S/. 42.23/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 12,
+            "hasta_cajas": 22,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.12021311475409,
+            "mensaje": "Compra 12-22 cajas: -5% = S/. 40.12/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 23,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.008622950819664,
+            "mensaje": "Compra +23 cajas: -10% = S/. 38.01/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 16,
+        "score_prioridad": 83.5
+      },
+      {
+        "posicion": 2,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 32.75,
+        "precio_sugerido": 32.75,
+        "precio_minimo_negociable": 27.83,
+        "precio_maximo_negociable": 36.02,
+        "demanda_estimada_cajas": 44,
+        "demanda_estimada_piezas": 880,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 22,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 32.74638888888889,
+            "mensaje": "Precio estándar: S/. 32.75/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 23,
+            "hasta_cajas": 44,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 31.10906944444444,
+            "mensaje": "Compra 23-44 cajas: -5% = S/. 31.11/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 45,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 29.47175,
+            "mensaje": "Compra +45 cajas: -10% = S/. 29.47/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 41.4
+      },
+      {
+        "posicion": 3,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 43.03,
+        "precio_sugerido": 43.03,
+        "precio_minimo_negociable": 36.57,
+        "precio_maximo_negociable": 47.33,
+        "demanda_estimada_cajas": 16,
+        "demanda_estimada_piezas": 324,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 43.02666666666667,
+            "mensaje": "Precio estándar: S/. 43.03/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 16,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.87533333333334,
+            "mensaje": "Compra 9-16 cajas: -5% = S/. 40.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 17,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.724000000000004,
+            "mensaje": "Compra +17 cajas: -10% = S/. 38.72/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 37.02
+      }
+    ]
+  },
+  {
+    "cliente": "MAS VISION S.A.C.",
+    "zona": "NORTE CHICO",
+    "region": "NORTE",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 55915.29,
+      "volumen_historico_cajas": 1211,
+      "productos_en_portafolio": 11,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 4,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.63,
+        "precio_sugerido": 53.63,
+        "precio_minimo_negociable": 45.58,
+        "precio_maximo_negociable": 58.99,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 254,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.62756756756756,
+            "mensaje": "Precio estándar: S/. 53.63/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.94618918918918,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.95/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.26481081081081,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.26/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 11,
+        "score_prioridad": 54.13
+      },
+      {
+        "posicion": 2,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 42.67,
+        "precio_sugerido": 42.67,
+        "precio_minimo_negociable": 36.27,
+        "precio_maximo_negociable": 46.94,
+        "demanda_estimada_cajas": 10,
+        "demanda_estimada_piezas": 217,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 42.67000000000001,
+            "mensaje": "Precio estándar: S/. 42.67/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 10,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 40.536500000000004,
+            "mensaje": "Compra 6-10 cajas: -5% = S/. 40.54/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 11,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 38.403000000000006,
+            "mensaje": "Compra +11 cajas: -10% = S/. 38.40/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 10,
+        "score_prioridad": 44.9
+      },
+      {
+        "posicion": 3,
+        "producto": "GAAP OFTENO 3 ML",
+        "precio_base": 73.5,
+        "precio_sugerido": 73.5,
+        "precio_minimo_negociable": 62.48,
+        "precio_maximo_negociable": 80.85,
+        "demanda_estimada_cajas": 13,
+        "demanda_estimada_piezas": 275,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 73.50444444444445,
+            "mensaje": "Precio estándar: S/. 73.50/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 13,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 69.82922222222221,
+            "mensaje": "Compra 7-13 cajas: -5% = S/. 69.83/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 14,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 66.154,
+            "mensaje": "Compra +14 cajas: -10% = S/. 66.15/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO 3 ML",
+          "producto_combo": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO 3 ML + GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 37.1
+      },
+      {
+        "posicion": 4,
+        "producto": "LANDAX 5ML",
+        "precio_base": 44.89,
+        "precio_sugerido": 44.89,
+        "precio_minimo_negociable": 38.16,
+        "precio_maximo_negociable": 49.38,
+        "demanda_estimada_cajas": 11,
+        "demanda_estimada_piezas": 229,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 5,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 44.89157894736842,
+            "mensaje": "Precio estándar: S/. 44.89/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 6,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.647,
+            "mensaje": "Compra 6-11 cajas: -5% = S/. 42.65/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 12,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 40.40242105263158,
+            "mensaje": "Compra +12 cajas: -10% = S/. 40.40/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 1,
+        "score_prioridad": 10.55
+      }
+    ]
+  },
+  {
+    "cliente": "OFTALMOSALUD AREQUIPA SAC",
+    "zona": "CADENAS",
+    "region": "NACIONAL",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 54689.22,
+      "volumen_historico_cajas": 1170,
+      "productos_en_portafolio": 11,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 4,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 65.22,
+        "precio_sugerido": 65.22,
+        "precio_minimo_negociable": 55.44,
+        "precio_maximo_negociable": 71.75,
+        "demanda_estimada_cajas": 7,
+        "demanda_estimada_piezas": 146,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 3,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 65.22333333333334,
+            "mensaje": "Precio estándar: S/. 65.22/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 4,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 61.962166666666675,
+            "mensaje": "Compra 4-7 cajas: -5% = S/. 61.96/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 8,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 58.70100000000001,
+            "mensaje": "Compra +8 cajas: -10% = S/. 58.70/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 11,
+        "score_prioridad": 47.53
+      },
+      {
+        "posicion": 2,
+        "producto": "ZEBESTEN 5ML PERU",
+        "precio_base": 49.07,
+        "precio_sugerido": 49.07,
+        "precio_minimo_negociable": 41.71,
+        "precio_maximo_negociable": 53.98,
+        "demanda_estimada_cajas": 17,
+        "demanda_estimada_piezas": 355,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 8,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 49.07000000000001,
+            "mensaje": "Precio estándar: S/. 49.07/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 9,
+            "hasta_cajas": 17,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 46.6165,
+            "mensaje": "Compra 9-17 cajas: -5% = S/. 46.62/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 18,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 44.16300000000001,
+            "mensaje": "Compra +18 cajas: -10% = S/. 44.16/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 7,
+        "score_prioridad": 36.68
+      },
+      {
+        "posicion": 3,
+        "producto": "ELIPTIC OFTENO 5ML",
+        "precio_base": 29.17,
+        "precio_sugerido": 29.17,
+        "precio_minimo_negociable": 24.79,
+        "precio_maximo_negociable": 32.09,
+        "demanda_estimada_cajas": 50,
+        "demanda_estimada_piezas": 1000,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 25,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 29.17,
+            "mensaje": "Precio estándar: S/. 29.17/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 26,
+            "hasta_cajas": 50,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 27.7115,
+            "mensaje": "Compra 26-50 cajas: -5% = S/. 27.71/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 51,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 26.253000000000004,
+            "mensaje": "Compra +51 cajas: -10% = S/. 26.25/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "ELIPTIC OFTENO 5ML",
+          "producto_combo": "ELIPTIC OFTENO 5ML PF PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra ELIPTIC OFTENO 5ML + ELIPTIC OFTENO 5ML PF PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 2,
+        "score_prioridad": 28.29
+      },
+      {
+        "posicion": 4,
+        "producto": "DUSTALOX 5ML",
+        "precio_base": 45.09,
+        "precio_sugerido": 45.09,
+        "precio_minimo_negociable": 38.33,
+        "precio_maximo_negociable": 49.6,
+        "demanda_estimada_cajas": 9,
+        "demanda_estimada_piezas": 194,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 4,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 45.09428571428571,
+            "mensaje": "Precio estándar: S/. 45.09/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 5,
+            "hasta_cajas": 9,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 42.839571428571425,
+            "mensaje": "Compra 5-9 cajas: -5% = S/. 42.84/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 10,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 40.58485714285714,
+            "mensaje": "Compra +10 cajas: -10% = S/. 40.58/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 2,
+        "score_prioridad": 12.5
+      }
+    ]
+  },
+  {
+    "cliente": "ASOCIACION CIVIL DIVINO NIYO JESUS",
+    "zona": "LIMA",
+    "region": "CENTRO",
+    "mes_proyeccion": "NOV",
+    "perfil_cliente": {
+      "gasto_historico_total": 53671.88,
+      "volumen_historico_cajas": 1115,
+      "productos_en_portafolio": 11,
+      "categoria": "GRANDE"
+    },
+    "num_clientes_similares_analizados": 10,
+    "total_productos_recomendados": 4,
+    "productos_ofertas": [
+      {
+        "posicion": 1,
+        "producto": "LAGRICEL OFTENO 0.5 ML",
+        "precio_base": 46.44,
+        "precio_sugerido": 46.44,
+        "precio_minimo_negociable": 39.47,
+        "precio_maximo_negociable": 51.08,
+        "demanda_estimada_cajas": 77,
+        "demanda_estimada_piezas": 1554,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 38,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 46.43855263157894,
+            "mensaje": "Precio estándar: S/. 46.44/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 39,
+            "hasta_cajas": 77,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 44.11662499999999,
+            "mensaje": "Compra 39-77 cajas: -5% = S/. 44.12/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 78,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 41.79469736842105,
+            "mensaje": "Compra +78 cajas: -10% = S/. 41.79/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "LAGRICEL OFTENO 0.5 ML",
+          "producto_combo": "LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra LAGRICEL OFTENO 0.5 ML + LAGRICEL OFTENO LIBRE DE CONSERVADORES (PF) 10 ML con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 9,
+        "score_prioridad": 111.85
+      },
+      {
+        "posicion": 2,
+        "producto": "ELAR-B 5 ML",
+        "precio_base": 53.56,
+        "precio_sugerido": 53.56,
+        "precio_minimo_negociable": 45.53,
+        "precio_maximo_negociable": 58.92,
+        "demanda_estimada_cajas": 12,
+        "demanda_estimada_piezas": 240,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 6,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 53.563125,
+            "mensaje": "Precio estándar: S/. 53.56/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 7,
+            "hasta_cajas": 12,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 50.88496875,
+            "mensaje": "Compra 7-12 cajas: -5% = S/. 50.88/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 13,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 48.2068125,
+            "mensaje": "Compra +13 cajas: -10% = S/. 48.21/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 17,
+        "score_prioridad": 74.8
+      },
+      {
+        "posicion": 3,
+        "producto": "AQUADRAN 10G",
+        "precio_base": 52.08,
+        "precio_sugerido": 52.08,
+        "precio_minimo_negociable": 44.27,
+        "precio_maximo_negociable": 57.28,
+        "demanda_estimada_cajas": 15,
+        "demanda_estimada_piezas": 311,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 7,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 52.07671232876711,
+            "mensaje": "Precio estándar: S/. 52.08/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 8,
+            "hasta_cajas": 15,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 49.47287671232875,
+            "mensaje": "Compra 8-15 cajas: -5% = S/. 49.47/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 16,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 46.869041095890395,
+            "mensaje": "Compra +16 cajas: -10% = S/. 46.87/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": null,
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 12,
+        "score_prioridad": 66.23
+      },
+      {
+        "posicion": 4,
+        "producto": "GAAP OFTENO 3 ML",
+        "precio_base": 82.69,
+        "precio_sugerido": 82.69,
+        "precio_minimo_negociable": 70.29,
+        "precio_maximo_negociable": 90.96,
+        "demanda_estimada_cajas": 22,
+        "demanda_estimada_piezas": 448,
+        "descuentos_por_volumen": [
+          {
+            "nivel": 1,
+            "desde_cajas": 1,
+            "hasta_cajas": 11,
+            "descuento_porcentaje": 0,
+            "precio_por_caja": 82.68926829268293,
+            "mensaje": "Precio estándar: S/. 82.69/caja"
+          },
+          {
+            "nivel": 2,
+            "desde_cajas": 12,
+            "hasta_cajas": 22,
+            "descuento_porcentaje": 5,
+            "precio_por_caja": 78.55480487804877,
+            "mensaje": "Compra 12-22 cajas: -5% = S/. 78.55/caja"
+          },
+          {
+            "nivel": 3,
+            "desde_cajas": 23,
+            "hasta_cajas": 99999,
+            "descuento_porcentaje": 10,
+            "precio_por_caja": 74.42034146341463,
+            "mensaje": "Compra +23 cajas: -10% = S/. 74.42/caja"
+          }
+        ],
+        "bonificacion": {
+          "activa": true,
+          "cada_cajas": 100,
+          "unidades_gratis": 5,
+          "porcentaje_ahorro": 5.0,
+          "mensaje": "¡BONIFICACIÓN! Por cada 100 cajas, recibe 5 GRATIS"
+        },
+        "combo_estrategico": {
+          "activa": true,
+          "producto_principal": "GAAP OFTENO 3 ML",
+          "producto_combo": "GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU",
+          "descuento_combo": 15,
+          "mensaje": "COMBO: Compra GAAP OFTENO 3 ML + GAAP OFTENO LIBRE DE CONSER PF 3 ML PERU con 15% descuento en ambos"
+        },
+        "terminos_pago": {
+          "contado": "Pago inmediato: 2% descuento adicional",
+          "credito_30": "Pago a 30 días: Sin interés",
+          "credito_60": "Pago a 60 días: 1% interés mensual",
+          "recomendacion": "credito_30"
+        },
+        "num_clientes_similares_compran": 4,
+        "score_prioridad": 40.66
+      }
+    ]
+  }
+]
